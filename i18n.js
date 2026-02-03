@@ -122,6 +122,7 @@ const translations = {
         'cta.subtitle': 'Mulai verifikasi gratis dan cegah sengketa sebelum terlambat',
         'cta.primary': 'Mulai Verifikasi Gratis',
         'cta.secondary': 'Hubungi Sales',
+        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs',
 
         // Footer
         'footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa.',
@@ -195,6 +196,7 @@ const translations = {
         'trade.cta.subtitle': 'Upload dokumen sekarang dan dapatkan laporan verifikasi dalam hitungan menit',
         'trade.cta.primary': 'Mulai Verifikasi Export',
         'trade.cta.secondary': 'Hubungi Sales untuk Demo',
+        'trade.cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs%20Ekspor',
         'trade.footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum atau customs brokerage. Platform ini hanya untuk verifikasi dokumen dan pencegahan masalah ekspor.',
 
         // === PROJECT PAGE (project.html) ===
@@ -246,6 +248,7 @@ const translations = {
         'project.cta.subtitle': 'Upload dokumen proyek sekarang dan pastikan claims dan payments Anda solid',
         'project.cta.primary': 'Mulai Verifikasi Proyek',
         'project.cta.secondary': 'Hubungi Sales untuk Demo',
+        'project.cta.whatsapp_link': 'https://wa.me/628122067494?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs%20Konstruksi',
     },
 
     en: {
@@ -357,6 +360,7 @@ const translations = {
         'cta.subtitle': 'Start free verification and prevent disputes before it\'s too late',
         'cta.primary': 'Start Free Verification',
         'cta.secondary': 'Contact Sales',
+        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs',
 
         // Tech Section
         'tech.title': 'Modern Technology, Built for Indonesia',
@@ -479,6 +483,7 @@ const translations = {
         'trade.cta.subtitle': 'Upload documents now and get verification report in minutes',
         'trade.cta.primary': 'Start Export Verification',
         'trade.cta.secondary': 'Contact Sales for Demo',
+        'trade.cta.whatsapp_link': 'https://wa.me/966504183224?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20EXPORTS%20TertibDocs',
         'trade.footer.disclaimer': 'TertibDocs does not provide legal advice or customs brokerage. Platform is for document verification only.',
 
         // === PROJECT PAGE (project.html) ===
@@ -631,6 +636,7 @@ const translations = {
         'project.cta.subtitle': 'Upload project documents now and ensure solid claims and payments',
         'project.cta.primary': 'Start Project Verification',
         'project.cta.secondary': 'Contact Sales for Demo',
+        'project.cta.whatsapp_link': 'https://wa.me/966504183224?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20CONSTRUCTION%20TertibDocs',
         'project.footer.disclaimer': 'TertibDocs does not provide legal, QS, or engineering advice. Platform is for document verification only.',
     }
 };
@@ -664,6 +670,16 @@ function updatePageLanguage(lang) {
             } else {
                 el.textContent = translatedText;
             }
+        }
+    });
+
+    // Update elements with data-i18n-href (links)
+    const linkElements = document.querySelectorAll('[data-i18n-href]');
+    linkElements.forEach(el => {
+        const key = el.getAttribute('data-i18n-href');
+        const translatedLink = translations[lang][key];
+        if (translatedLink) {
+            el.href = translatedLink;
         }
     });
 
