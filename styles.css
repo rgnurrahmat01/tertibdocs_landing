@@ -153,6 +153,39 @@ section {
     color: var(--accent-2);
 }
 
+/* Language Toggle */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.25rem;
+}
+
+.lang-btn {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+    background: var(--ink);
+    color: white;
+}
+
+.lang-btn:hover:not(.active) {
+    color: var(--ink);
+}
+
+
 .mobile-menu-toggle {
     display: block;
     background: none;
