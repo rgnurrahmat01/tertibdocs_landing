@@ -360,8 +360,7 @@ const translations = {
         'cta.subtitle': 'Start free verification and prevent disputes before it\'s too late',
         'cta.primary': 'Start Free Verification',
         'cta.secondary': 'Contact Sales',
-        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs',
-
+        'cta.whatsapp_link': 'https://wa.me/966504183224?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20TertibDocs',
         // Tech Section
         'tech.title': 'Modern Technology, Built for Indonesia',
         'tech.subtitle': 'State-of-the-art backend and frontend',
