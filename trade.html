@@ -44,11 +44,17 @@
 
             <!-- Desktop Menu -->
             <ul class="nav-menu">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#export-checklist">Checklist</a></li>
-                <li><a href="#common-issues">Masalah Umum</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#export-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
             </ul>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle">
+                <button id="lang-id" class="lang-btn active" type="button">ID</button>
+                <button id="lang-en" class="lang-btn" type="button">EN</button>
+            </div>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
@@ -59,10 +65,10 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#export-checklist">Checklist</a></li>
-                <li><a href="#common-issues">Masalah Umum</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#export-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
             </ul>
         </div>
     </nav>
@@ -71,16 +77,17 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="pill animate-rise">Jalur 1: Trade & Perdagangan</span>
-                <h1>Verifikasi Dokumen Ekspor-Impor Sebelum Pengiriman</h1>
-                <p class="hero-subtitle">
+                <span class="pill animate-rise" data-i18n="trade.hero.pill">Jalur 1: Trade & Perdagangan</span>
+                <h1 data-i18n="trade.hero.title">Verifikasi Dokumen Ekspor-Impor Sebelum Pengiriman</h1>
+                <p class="hero-subtitle" data-i18n="trade.hero.subtitle">
                     Cegah penolakan di bea cukai, pembayaran tertunda, dan masalah shipping dengan verifikasi dokumen
                     ekspor yang komprehensif. TerTibDocs memastikan kontrak, invoice, dan shipping docs Anda lengkap dan
                     konsisten.
                 </p>
                 <div class="hero-cta">
-                    <a href="" class="btn btn-primary">Mulai Verifikasi Export</a>
-                    <a href="#export-checklist" class="btn btn-outline">Lihat Checklist Lengkap</a>
+                    <a href="" class="btn btn-primary" data-i18n="trade.hero.cta.primary">Mulai Verifikasi Export</a>
+                    <a href="#export-checklist" class="btn btn-outline" data-i18n="trade.hero.cta.secondary">Lihat
+                        Checklist Lengkap</a>
                 </div>
             </div>
         </div>
@@ -90,40 +97,29 @@
     <section id="why-matters" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Kenapa Penting?</span>
-                <h2 style="margin-top: 1rem;">Risiko Dokumen Ekspor Tidak Lengkap</h2>
-                <p>Kesalahan dokumentasi ekspor bisa berakibat fatal untuk bisnis Anda</p>
+                <span class="pill" data-i18n="trade.why.pill">Kenapa Penting?</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.why.title">Risiko Dokumen Ekspor Tidak Lengkap</h2>
+                <p data-i18n="trade.why.subtitle">Kesalahan dokumentasi ekspor bisa berakibat fatal untuk bisnis Anda
+                </p>
             </div>
             <div class="grid">
                 <div class="card">
                     <div class="feature-icon">🚫</div>
-                    <h3>Ditahan Bea Cukai</h3>
-                    <p>Barang ditahan di customs karena dokumen tidak sesuai atau invoice tidak match dengan packing
-                        list. Biaya storage menumpuk setiap hari.</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Biaya:</strong> USD 50-200/hari warehouse fee
-                    </div>
+                    <h3 data-i18n="trade.why.card1.title">Ditahan Bea Cukai</h3>
+                    <p data-i18n="trade.why.card1.desc">Barang ditahan di customs karena dokumen tidak sesuai atau
+                        invoice tidak match dengan packing list. Biaya storage menumpuk setiap hari.</p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">💰</div>
-                    <h3>Pembayaran Letter of Credit (L/C) Ditolak</h3>
-                    <p>Bank menolak membayar karena discrepancy kecil di dokumen - salah tanggal, salah nama, atau
-                        missing signature.</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Dampak:</strong> Cash flow terhambat 2-4 minggu
-                    </div>
+                    <h3 data-i18n="trade.why.card2.title">Pembayaran Letter of Credit (L/C) Ditolak</h3>
+                    <p data-i18n="trade.why.card2.desc">Bank menolak membayar karena discrepancy kecil di dokumen -
+                        salah tanggal, salah nama, atau missing signature.</p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">⚠️</div>
-                    <h3>Non-Compliance dengan Incoterms</h3>
-                    <p>Dokumen tidak sesuai dengan Incoterms yang disepakati (FOB, CIF, DDP, dll). Siapa yang tanggung
-                        biaya jadi tidak jelas.</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Risiko:</strong> Sengketa biaya dan tanggung jawab
-                    </div>
+                    <h3 data-i18n="trade.why.card3.title">Non-Compliance dengan Incoterms</h3>
+                    <p data-i18n="trade.why.card3.desc">Dokumen tidak sesuai dengan Incoterms yang disepakati (FOB, CIF,
+                        DDP, dll). Siapa yang tanggung biaya jadi tidak jelas.</p>
                 </div>
             </div>
         </div>
@@ -133,134 +129,121 @@
     <section id="export-checklist" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Comprehensive Checklist</span>
-                <h2 style="margin-top: 1rem;">Dokumen Ekspor yang Kami Verifikasi</h2>
-                <p>Checklist lengkap untuk ekspor yang aman dan lancar</p>
+                <span class="pill" data-i18n="trade.checklist.pill">Comprehensive Checklist</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.checklist.title">Dokumen Ekspor yang Kami Verifikasi</h2>
+                <p data-i18n="trade.checklist.subtitle">Checklist lengkap untuk ekspor yang aman dan lancar</p>
             </div>
 
             <!-- Core Export Documents -->
             <div style="max-width: 900px; margin: 0 auto;">
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">📋 1. Core Contract Documents</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="trade.check.contract.title">📋 1. Core Contract Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Sales Contract / Purchase Order</h3>
-                                <p><strong>Yang kami cek:</strong> Nama buyer dan seller sesuai, product description
-                                    lengkap, quantity, unit price, total amount, payment terms, delivery terms
-                                    (Incoterms), destination port.</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;"><strong>Common
-                                        issue:</strong> Nama pihak tidak konsisten antara kontrak dan invoice</p>
+                                <h3 data-i18n="trade.check.contract.item1">Sales Contract / Purchase Order</h3>
+                                <p data-i18n="trade.check.contract.item1.desc">Nama buyer dan seller sesuai, product
+                                    description lengkap, quantity, unit price, total amount, payment terms, delivery
+                                    terms (Incoterms), destination port.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Proforma Invoice (jika ada)</h3>
-                                <p><strong>Yang kami cek:</strong> Cocok dengan final invoice, quoted price tidak
-                                    berubah tanpa addendum</p>
+                                <h3 data-i18n="trade.check.contract.item2">Proforma Invoice (jika ada)</h3>
+                                <p data-i18n="trade.check.contract.item2.desc">Cocok dengan final invoice, quoted price
+                                    tidak berubah tanpa addendum</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">💵 2. Financial Documents</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="trade.check.financial.title">💵 2. Financial Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Commercial Invoice</h3>
-                                <p><strong>Yang kami cek:</strong> Nomor invoice, tanggal, nama \& alamat lengkap
-                                    buyer/seller, description of goods cocok dengan PO, HS Code (jika perlu), quantity,
-                                    unit price, total, Incoterms, payment terms.</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">
-                                    <strong>Critical:</strong> Harus 100% match dengan Letter of Credit (kalau pakai
-                                    L/C)
-                                </p>
+                                <h3 data-i18n="trade.check.financial.item1">Commercial Invoice</h3>
+                                <p data-i18n="trade.check.financial.item1.desc">Nomor invoice, tanggal, nama & alamat
+                                    lengkap buyer/seller, deskripsi barang cocok dengan PO, HS Code (jika perlu),
+                                    quantity, unit price, total, Incoterms, payment terms.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Packing List</h3>
-                                <p><strong>Yang kami cek:</strong> Total packages, nett weight, gross weight,
-                                    volume/CBM, marks \& numbers on packages cocok dengan B/L</p>
+                                <h3 data-i18n="trade.check.financial.item2">Packing List</h3>
+                                <p data-i18n="trade.check.financial.item2.desc">Total packages, nett weight, gross
+                                    weight, volume/CBM, marks & numbers on packages cocok dengan B/L</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Letter of Credit (L/C) - jika applicable</h3>
-                                <p><strong>Yang kami cek:</strong> Semua syarat di L/C terpenuhi, tidak ada discrepancy,
-                                    presented documents sesuai dengan yang diminta oleh L/C</p>
+                                <h3 data-i18n="trade.check.financial.item3">Letter of Credit (L/C) - jika applicable
+                                </h3>
+                                <p data-i18n="trade.check.financial.item3.desc">Semua syarat di L/C terpenuhi, tidak ada
+                                    discrepancy, presented documents sesuai dengan yang diminta oleh L/C</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">🚢 3. Shipping & Logistics Documents
-                    </h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="trade.check.logistics.title">🚢 3. Shipping & Logistics Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Bill of Lading (B/L) atau Airway Bill (AWB)</h3>
-                                <p><strong>Yang kami cek:</strong> Consignee name, notify party, port of loading, port
-                                    of discharge, freight payment status, date of shipment, container/package numbers
-                                    cocok dengan packing list.</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;"><strong>Tipe
-                                        B/L:</strong> Negotiable vs Non-negotiable, Original vs Telex Release</p>
+                                <h3 data-i18n="trade.check.logistics.item1">Bill of Lading (B/L) atau Airway Bill (AWB)
+                                </h3>
+                                <p data-i18n="trade.check.logistics.item1.desc">Consignee name, notify party, port of
+                                    loading, port of discharge, freight payment status, date of shipment,
+                                    container/package numbers cocok dengan packing list.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Certificate of Origin (COO)</h3>
-                                <p><strong>Yang kami cek:</strong> Negara asal barang, cocok dengan invoice, disahkan
-                                    oleh instansi berwenang (Kamar Dagang)</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;"><strong>Kenapa
-                                        penting:</strong> Untuk preferensi tariff bea cukai atau trade agreement (ASEAN,
-                                    RCEP, dll)</p>
+                                <h3 data-i18n="trade.check.logistics.item2">Certificate of Origin (COO)</h3>
+                                <p data-i18n="trade.check.logistics.item2.desc">Negara asal barang, cocok dengan
+                                    invoice, disahkan oleh instansi berwenang (Kamar Dagang)</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Insurance Certificate (jika CIF/CIP)</h3>
-                                <p><strong>Yang kami cek:</strong> Coverage amount (biasanya 110% dari invoice value),
-                                    insured party, voyage details</p>
+                                <h3 data-i18n="trade.check.logistics.item3">Insurance Certificate (jika CIF/CIP)</h3>
+                                <p data-i18n="trade.check.logistics.item3.desc">Coverage amount (biasanya 110% dari
+                                    invoice value), insured party, voyage details</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">🔍 4. Compliance & Quality Documents
-                    </h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="trade.check.compliance.title">🔍 4. Compliance & Quality Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Inspection Certificate (jika perlu)</h3>
-                                <p>Quality inspection, quantity inspection, atau pre-shipment inspection oleh surveyor
-                                </p>
+                                <h3 data-i18n="trade.check.compliance.item1">Inspection Certificate (jika perlu)</h3>
+                                <p data-i18n="trade.check.compliance.item1.desc">Quality inspection, quantity
+                                    inspection, atau pre-shipment inspection oleh surveyor</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Phytosanitary / Health Certificate</h3>
-                                <p>Untuk produk agrikultur, makanan, atau hewan</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Halal Certificate (jika applicable)</h3>
-                                <p>Untuk ekspor produk makanan/minuman ke negara muslim</p>
+                                <h3 data-i18n="trade.check.compliance.item2">Phytosanitary / Health Certificate</h3>
+                                <p data-i18n="trade.check.compliance.item2.desc">Untuk produk agrikultur, makanan, atau
+                                    hewan</p>
                             </div>
                         </li>
                     </ul>
@@ -273,9 +256,11 @@
     <section id="incoterms" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Incoterms 2020</span>
-                <h2 style="margin-top: 1rem;">Verifikasi Kecocokan dengan Incoterms</h2>
-                <p>Kami pastikan dokumen Anda sesuai dengan Incoterms yang disepakati</p>
+                <span class="pill" data-i18n="trade.incoterms.title">Incoterms Compliance</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.incoterms.title">Verifikasi Kecocokan dengan Incoterms
+                </h2>
+                <p data-i18n="trade.incoterms.desc">Kami pastikan dokumen Anda sesuai dengan Incoterms yang disepakati
+                </p>
             </div>
             <div class="grid">
                 <div class="card">
@@ -316,51 +301,40 @@
     <section id="common-issues" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Problem Prevention</span>
-                <h2 style="margin-top: 1rem;">5 Masalah Ekspor Paling Sering</h2>
-                <p>Dan bagaimana TerTibDocs mencegahnya</p>
+                <span class="pill" data-i18n="trade.issues.pill">Problem Prevention</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.issues.title">5 Masalah Ekspor Paling Sering</h2>
+                <p data-i18n="trade.issues.subtitle">Dan bagaimana TerTibDocs mencegahnya</p>
             </div>
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">1. Discrepancy di Letter of Credit</h3>
-                    <p><strong>Masalah:</strong> Bank menolak bayar karena nama, tanggal, atau amount tidak exactly
-                        match dengan L/C terms.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Cross-check
-                        otomatis antara L/C terms vs semua presented documents. Deteksi even typo kecil atau perbedaan
-                        format tanggal.</p>
-                </div>
-
-                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">2. HS Code Salah atau Kurang Spesifik</h3>
-                    <p><strong>Masalah:</strong> Bea cukai reject karena HS Code tidak sesuai dengan barang atau terlalu
-                        general, jadi dikenakan tarif lebih tinggi.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Flag jika HS
-                        Code kurang dari 6 digit atau tidak konsisten antara invoice dan customs declaration.</p>
-                </div>
-
-                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">3. Weight/Volume Tidak Cocok</h3>
-                    <p><strong>Masalah:</strong> Packing list bilang 1000 kg, tapi B/L tulis 1200 kg. Customs curiga ada
-                        masalah.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Verifikasi
-                        konsistensi weight/volume/CBM antara packing list, invoice, dan B/L. Tolerance check jika ada
-                        slight difference.</p>
-                </div>
-
-                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">4. Certificate of Origin Tidak Valid</h3>
-                    <p><strong>Masalah:</strong> COO expired, atau negara asal tidak eligible untuk preferensi tarif
-                        yang diklaim.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Check expiry
-                        date COO, verifikasi issuing authority, cross-check dengan trade agreement rules.</p>
-                </div>
-
-                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">5. Shipment Date Terlambat dari L/C Deadline</h3>
-                    <p><strong>Masalah:</strong> B/L date lewat dari latest shipment date di L/C. Bank otomatis reject.
+                    <h3 style="color: var(--accent);" data-i18n="trade.issue1.title">1. Discrepancy di Letter of Credit
+                    </h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span data-i18n="trade.issue1.problem">Bank
+                            menolak bayar karena nama, tanggal, atau amount tidak exactly match dengan L/C terms.</span>
                     </p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Compare
-                        shipment date di B/L dengan deadline di L/C. Alert jika sudah mendekati atau lewat deadline.</p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="trade.issue1.sol">Cross-check otomatis antara L/C terms vs
+                            semua presented documents.</span></p>
+                </div>
+
+                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
+                    <h3 style="color: var(--accent);" data-i18n="trade.issue2.title">2. HS Code Salah atau Kurang
+                        Spesifik</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span data-i18n="trade.issue2.problem">Bea
+                            cukai reject karena HS Code tidak sesuai dengan barang atau terlalu general.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="trade.issue2.sol">Flag jika HS Code kurang dari 6 digit atau
+                            tidak konsisten.</span></p>
+                </div>
+
+                <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
+                    <h3 style="color: var(--accent);" data-i18n="trade.issue3.title">3. Weight/Volume Tidak Cocok</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="trade.issue3.problem">Packing list bilang 1000 kg, tapi B/L tulis 1200 kg.
+                            Customs curiga ada masalah.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="trade.issue3.sol">Verifikasi konsistensi weight/volume/CBM
+                            antara packing list, invoice, dan B/L.</span></p>
                 </div>
             </div>
         </div>
@@ -370,41 +344,42 @@
     <section id="how-it-works" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Proses Verifikasi</span>
-                <h2 style="margin-top: 1rem;">Cara Kerja TerTibDocs untuk Ekspor</h2>
-                <p>4 langkah mudah untuk dokumen ekspor yang aman</p>
+                <span class="pill" data-i18n="trade.how.pill">Proses Verifikasi</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.how.title">Cara Kerja TerTibDocs untuk Ekspor</h2>
+                <p data-i18n="trade.how.subtitle">4 langkah mudah untuk dokumen ekspor yang aman</p>
             </div>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Upload Dokumen Ekspor Anda</h3>
-                        <p>Upload semua dokumen: Contract, Invoice, Packing List, B/L, COO, Insurance, dan dokumen
-                            lainnya. Sistem akan auto-classify setiap dokumen.</p>
+                        <h3 data-i18n="trade.how.step1.title">Upload Dokumen Ekspor Anda</h3>
+                        <p data-i18n="trade.how.step1.desc">Upload semua dokumen: Contract, Invoice, Packing List, B/L,
+                            COO, Insurance, dan dokumen lainnya. Sistem akan auto-classify setiap dokumen.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>AI Ekstrak Data Kunci</h3>
-                        <p>AI kami extract nama pihak, amount, quantity, dates, Incoterms, HS Code, dan semua data
-                            penting dari setiap dokumen.</p>
+                        <h3 data-i18n="trade.how.step2.title">AI Ekstrak Data Kunci</h3>
+                        <p data-i18n="trade.how.step2.desc">AI kami extract nama pihak, amount, quantity, dates,
+                            Incoterms, HS Code, dan semua data penting dari setiap dokumen.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Checklist Engine Verifikasi</h3>
-                        <p>Sistem cross-check konsistensi data antar dokumen, validasi dengan Incoterms, cek compliance
-                            dengan L/C (jika ada), flag missing documents atau discrepancy.</p>
+                        <h3 data-i18n="trade.how.step3.title">Checklist Engine Verifikasi</h3>
+                        <p data-i18n="trade.how.step3.desc">Sistem cross-check konsistensi data antar dokumen, validasi
+                            dengan Incoterms, cek compliance dengan L/C (jika ada), flag missing documents atau
+                            discrepancy.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Download Laporan Verifikasi</h3>
-                        <p>Dapatkan laporan PDF dengan status PASS/WARN/FAIL untuk setiap item. Lengkap dengan action
-                            items untuk fix sebelum shipment.</p>
+                        <h3 data-i18n="trade.how.step4.title">Download Laporan Verifikasi</h3>
+                        <p data-i18n="trade.how.step4.desc">Dapatkan laporan PDF dengan status PASS/WARN/FAIL untuk
+                            setiap item. Lengkap dengan action items untuk fix sebelum shipment.</p>
                     </div>
                 </div>
             </div>
@@ -415,48 +390,49 @@
     <section id="sample-output" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Contoh Output</span>
-                <h2 style="margin-top: 1rem;">Contoh Laporan Verifikasi Ekspor</h2>
+                <span class="pill" data-i18n="trade.sample.pill">Contoh Output</span>
+                <h2 style="margin-top: 1rem;" data-i18n="trade.sample.title">Contoh Laporan Verifikasi Ekspor</h2>
             </div>
             <div class="card" style="max-width: 800px; margin: 0 auto; padding: 2rem;">
-                <h3 style="margin-bottom: 1.5rem;">Verification Report - Export to Singapore</h3>
+                <h3 style="margin-bottom: 1.5rem;" data-i18n="trade.sample.report_title">Verification Report - Export to
+                    Singapore</h3>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; margin-bottom: 1rem;">
-                    <strong style="color: #059669;">✓ PASS:</strong> Commercial Invoice matches Purchase Order (amount,
-                    quantity, description)
+                    <strong style="color: #059669;">✓ PASS:</strong> <span data-i18n="trade.sample.pass1">Commercial
+                        Invoice matches Purchase Order (amount, quantity, description)</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; margin-bottom: 1rem;">
-                    <strong style="color: #059669;">✓ PASS:</strong> Packing List weight (1,234 kg) matches B/L (1,234
-                    kg)
+                    <strong style="color: #059669;">✓ PASS:</strong> <span data-i18n="trade.sample.pass2">Packing List
+                        weight (1,234 kg) matches B/L (1,234 kg)</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(251, 191, 36, 0.1); border-left: 4px solid #f59e0b; margin-bottom: 1rem;">
-                    <strong style="color: #d97706;">⚠ WARN:</strong> Certificate of Origin expires in 7 days
-                    (2026-02-10). Consider renewing before shipment.
+                    <strong style="color: #d97706;">⚠ WARN:</strong> <span data-i18n="trade.sample.warn1">Certificate of
+                        Origin expires in 7 days (2026-02-10). Consider renewing before shipment.</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; margin-bottom: 1rem;">
-                    <strong style="color: #dc2626;">✗ FAIL:</strong> Consignee name in B/L ("ABC Trading Pte Ltd") does
-                    not match Invoice ("ABC Trading Pte. Ltd.") - note the period after "Pte"
+                    <strong style="color: #dc2626;">✗ FAIL:</strong> <span data-i18n="trade.sample.fail1">Consignee name
+                        in B/L ("ABC Trading Pte Ltd") does not match Invoice ("ABC Trading Pte. Ltd.") - note the
+                        period after "Pte"</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; margin-bottom: 1rem;">
-                    <strong style="color: #dc2626;">✗ FAIL:</strong> Missing Insurance Certificate (required for CIF
-                    Incoterms)
+                    <strong style="color: #dc2626;">✗ FAIL:</strong> <span data-i18n="trade.sample.fail2">Missing
+                        Insurance Certificate (required for CIF Incoterms)</span>
                 </div>
 
                 <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(148, 163, 184, 0.2);">
-                    <h4 style="color: var(--primary-700);">Recommended Actions:</h4>
+                    <h4 style="color: var(--primary-700);" data-i18n="trade.sample.rec">Recommended Actions:</h4>
                     <ol style="color: #64748b; margin-top: 0.5rem;">
-                        <li>Fix consignee name in B/L to exactly match Invoice</li>
-                        <li>Obtain Insurance Certificate from freight forwarder</li>
-                        <li>Consider renewing COO to avoid last-minute issues</li>
+                        <li data-i18n="trade.sample.act1">Fix consignee name in B/L to exactly match Invoice</li>
+                        <li data-i18n="trade.sample.act2">Obtain Insurance Certificate from freight forwarder</li>
                     </ol>
                 </div>
             </div>
@@ -467,12 +443,13 @@
     <section id="cta" class="fade-in">
         <div class="container">
             <div class="card text-center" style="max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem;">
-                <h2>Siap Verifikasi Dokumen Ekspor Anda?</h2>
-                <p class="mb-3">Upload dokumen sekarang dan dapatkan laporan verifikasi dalam hitungan menit</p>
+                <h2 data-i18n="trade.cta.title">Siap Verifikasi Dokumen Ekspor Anda?</h2>
+                <p class="mb-3" data-i18n="trade.cta.subtitle">Upload dokumen sekarang dan dapatkan laporan verifikasi
+                    dalam hitungan menit</p>
                 <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-                    <a href="" class="btn btn-primary">Mulai Verifikasi Export</a>
+                    <a href="" class="btn btn-primary" data-i18n="trade.cta.primary">Mulai Verifikasi Export</a>
                     <a href="https://wa.me/6281388889818?text=Hallo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20verifikasi%20dokumen%20ekspor"
-                        class="btn btn-secondary">Hubungi Sales untuk Demo</a>
+                        class="btn btn-secondary" data-i18n="trade.cta.secondary">Hubungi Sales untuk Demo</a>
                 </div>
             </div>
         </div>
@@ -483,15 +460,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-disclaimer">
-                    ⚠️ <strong>Disclaimer:</strong> TerTibDocs tidak memberikan nasihat hukum atau customs brokerage
-                    service. Platform ini hanya untuk verifikasi dokumen dan pencegahan masalah ekspor.
+                    ⚠️ <strong>Disclaimer:</strong> <span data-i18n="trade.footer.disclaimer">TerTibDocs tidak
+                        memberikan nasihat hukum atau customs brokerage
+                        service. Platform ini hanya untuk verifikasi dokumen dan pencegahan masalah ekspor.</span>
                 </div>
 
                 <ul class="footer-links">
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="#export-checklist">Checklist</a></li>
-                    <li><a href="#common-issues">Masalah Umum</a></li>
-                    <li><a href="https://wa.me/6281388889818">Kontak</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="#export-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                    <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                    <li><a href="https://wa.me/6281388889818" data-i18n="footer.contact">Kontak</a></li>
                 </ul>
             </div>
 
@@ -502,6 +480,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 

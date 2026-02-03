@@ -44,11 +44,17 @@
 
             <!-- Desktop Menu -->
             <ul class="nav-menu">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#construction-checklist">Checklist</a></li>
-                <li><a href="#common-issues">Masalah Umum</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#construction-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
             </ul>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle">
+                <button id="lang-id" class="lang-btn active" type="button">ID</button>
+                <button id="lang-en" class="lang-btn" type="button">EN</button>
+            </div>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
@@ -59,10 +65,10 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#construction-checklist">Checklist</a></li>
-                <li><a href="#common-issues">Masalah Umum</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#construction-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
             </ul>
         </div>
     </nav>
@@ -71,16 +77,17 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="pill animate-rise">Jalur 3: Project & Konstruksi</span>
-                <h1>Verifikasi Dokumen Kontrak Konstruksi & Klaim</h1>
-                <p class="hero-subtitle">
+                <span class="pill animate-rise" data-i18n="project.hero.pill">Jalur 3: Project & Konstruksi</span>
+                <h1 data-i18n="project.hero.title">Verifikasi Dokumen Kontrak Konstruksi & Klaim</h1>
+                <p class="hero-subtitle" data-i18n="project.hero.subtitle">
                     Cegah penolakan klaim EOT, variasi order yang tidak sah, dan konflik pembayaran dengan verifikasi
                     dokumen konstruksi yang komprehensif. TertibDocs memastikan kontrak, variation order, dan claims
                     Anda lengkap dan terdokumentasi dengan benar.
                 </p>
                 <div class="hero-cta">
-                    <a href="" class="btn btn-primary">Mulai Verifikasi Proyek</a>
-                    <a href="#construction-checklist" class="btn btn-outline">Lihat Checklist Lengkap</a>
+                    <a href="" class="btn btn-primary" data-i18n="project.hero.cta.primary">Mulai Verifikasi Proyek</a>
+                    <a href="#construction-checklist" class="btn btn-outline"
+                        data-i18n="project.hero.cta.secondary">Lihat Checklist Lengkap</a>
                 </div>
             </div>
         </div>
@@ -90,43 +97,29 @@
     <section id="why-matters" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Kenapa Penting?</span>
-                <h2 style="margin-top: 1rem;">Risiko Dokumen Konstruksi Tidak Lengkap</h2>
-                <p>Kesalahan dokumentasi proyek konstruksi bisa berakibat klaim ditolak dan kerugian miliaran rupiah</p>
+                <span class="pill" data-i18n="project.why.pill">Kenapa Penting?</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.why.title">Risiko Dokumen Konstruksi Tidak Lengkap</h2>
+                <p data-i18n="project.why.subtitle">Kesalahan dokumentasi proyek konstruksi bisa berakibat klaim ditolak
+                    dan kerugian miliaran rupiah</p>
             </div>
             <div class="grid">
                 <div class="card">
                     <div class="feature-icon">⏱️</div>
-                    <h3>EOT Claim Ditolak</h3>
-                    <p>Extension of Time claim ditolak karena Notice tidak disampaikan dalam waktu yang ditentukan
-                        kontrak (misalnya: 14 hari dari kejadian delay).</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Dampak:</strong> Kontraktor tanggung Liquidated Damages
-                        untuk keterlambatan
-                    </div>
+                    <h3 data-i18n="project.why.card1.title">EOT Claim Ditolak</h3>
+                    <p data-i18n="project.why.card1.desc">Extension of Time claim ditolak karena Notice tidak
+                        disampaikan dalam waktu yang ditentukan kontrak (misalnya: 14 hari dari kejadian delay).</p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">💰</div>
-                    <h3>Variation Order Tidak Dibayar</h3>
-                    <p>Pekerjaan tambahan sudah dilaksanakan tapi tidak ada Variation Instruction tertulis atau
-                        quotation tidak di-approve. Payment claim ditolak.</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Risiko:</strong> Kerugian jutaan hingga miliaran untuk
-                        extra works
-                    </div>
+                    <h3 data-i18n="project.why.card2.title">Variation Order Tidak Dibayar</h3>
+                    <p data-i18n="project.why.card2.desc">Pekerjaan tambahan sudah dilaksanakan tapi tidak ada Variation
+                        Instruction tertulis atau quotation tidak di-approve. Payment claim ditolak.</p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">📋</div>
-                    <h3>Payment Certificate Ditahan</h3>
-                    <p>Payment application tidak lengkap - missing as-built drawings, inspection reports, atau tidak
-                        cocok dengan programme of works.</p>
-                    <div
-                        style="background: rgba(239, 107, 77, 0.1); padding: 0.75rem; border-radius: 8px; margin-top: 1rem;">
-                        <strong style="color: var(--accent);">Dampak:</strong> Cash flow terhambat, sulit bayar
-                        subkontraktor
-                    </div>
+                    <h3 data-i18n="project.why.card3.title">Payment Certificate Ditahan</h3>
+                    <p data-i18n="project.why.card3.desc">Payment application tidak lengkap - missing as-built drawings,
+                        inspection reports, atau tidak cocok dengan programme of works.</p>
                 </div>
             </div>
         </div>
@@ -136,215 +129,190 @@
     <section id="construction-checklist" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Comprehensive Checklist</span>
-                <h2 style="margin-top: 1rem;">Dokumen Konstruksi yang Kami Verifikasi</h2>
-                <p>Checklist lengkap untuk proyek konstruksi yang aman dan tertib</p>
+                <span class="pill" data-i18n="project.checklist.pill">Comprehensive Checklist</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.checklist.title">Dokumen Konstruksi yang Kami
+                    Verifikasi</h2>
+                <p data-i18n="project.checklist.subtitle">Checklist lengkap untuk proyek konstruksi yang aman dan tertib
+                </p>
             </div>
 
             <!-- Core Construction Documents -->
             <div style="max-width: 900px; margin: 0 auto;">
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">📋 1. Main Contract Documents</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="project.check.contract.title">📋 1. Main Contract Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Construction Contract (Main Agreement)</h3>
-                                <p><strong>Yang kami cek:</strong> Nama pihak (Employer/Contractor), scope of works,
-                                    contract sum, contract period, commencement date, completion date, Liquidated
-                                    Damages clause, retention percentage, payment terms, dispute resolution mechanism.
+                                <h3 data-i18n="project.check.contract.item1">Construction Contract (Main Agreement)</h3>
+                                <p data-i18n="project.check.contract.item1.desc">Nama pihak (Employer/Contractor), scope
+                                    of works, contract sum, contract period, commencement date, completion date,
+                                    Liquidated Damages clause, retention percentage, payment terms.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h3 data-i18n="project.check.contract.item2">Contract Drawings & Specifications</h3>
+                                <p data-i18n="project.check.contract.item2.desc">Drawing list lengkap, revision status,
+                                    match dengan scope of works</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h3 data-i18n="project.check.contract.item3">Bill of Quantities (BOQ)</h3>
+                                <p data-i18n="project.check.contract.item3.desc">Item descriptions, quantities, unit
+                                    rates, total contract sum cocok dengan main agreement</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h3 data-i18n="project.check.contract.item4">Programme of Works (Baseline)</h3>
+                                <p data-i18n="project.check.contract.item4.desc">Critical path, milestone dates,
+                                    completion date sesuai kontrak, format (Gantt chart, CPM, dll)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="project.check.variation.title">🔧 2. Variation & Change Orders</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h3 data-i18n="project.check.variation.item1">Variation Instruction (VI)</h3>
+                                <p data-i18n="project.check.variation.item1.desc">VI number, date issued, description of
+                                    variation, reference to contract clause, issued by authorized person, signed and
+                                    stamped.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h3 data-i18n="project.check.variation.item2">Variation Quotation (VQ)</h3>
+                                <p data-i18n="project.check.variation.item2.desc">Breakdown costs (labour, material,
+                                    equipment), time extension requested (if any), quotation approved/rejected status
                                 </p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;"><strong>Standard
-                                        forms:</strong> FIDIC, JCT, NEC, atau kontrak lokal Indonesia</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Contract Drawings & Specifications</h3>
-                                <p><strong>Yang kami cek:</strong> Drawing list lengkap, revision status, match dengan
-                                    scope of works</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Bill of Quantities (BOQ)</h3>
-                                <p><strong>Yang kami cek:</strong> Item descriptions, quantities, unit rates, total
-                                    contract sum cocok dengan main agreement</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Programme of Works (Baseline)</h3>
-                                <p><strong>Yang kami cek:</strong> Critical path, milestone dates, completion date
-                                    sesuai kontrak, format (Gantt chart, CPM, dll)</p>
+                                <h3 data-i18n="project.check.variation.item3">Variation Order (VO)</h3>
+                                <p data-i18n="project.check.variation.item3.desc">VO number, reference to VI and VQ,
+                                    agreed price, agreed time extension, signed by both parties</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">🔧 2. Variation & Change Orders</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="project.check.claims.title">⏰ 3. Claims & Notices</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Variation Instruction (VI)</h3>
-                                <p><strong>Yang kami cek:</strong> VI number, date issued, description of variation,
-                                    reference to contract clause, issued by authorized person
-                                    (Engineer/Architect/Employer's Rep), signed and stamped.</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">
-                                    <strong>Critical:</strong> Harus ada VI tertulis SEBELUM pekerjaan dimulai</p>
+                                <h3 data-i18n="project.check.claims.item1">Notice of Delay (Early Warning)</h3>
+                                <p data-i18n="project.check.claims.item1.desc">Date of notice, event causing delay,
+                                    reference to contract clause, submitted within time bar (e.g., 14/28 days),
+                                    delivered to correct party.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Variation Quotation (VQ)</h3>
-                                <p><strong>Yang kami cek:</strong> Breakdown costs (labour, material, equipment), time
-                                    extension requested (if any), quotation approved/rejected status</p>
+                                <h3 data-i18n="project.check.claims.item2">EOT (Extension of Time) Claim</h3>
+                                <p data-i18n="project.check.claims.item2.desc">Claim reference number, event
+                                    description, delay analysis (as-planned vs as-built), supporting documents (notice,
+                                    correspondence, claim).</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Variation Order (VO)</h3>
-                                <p><strong>Yang kami cek:</strong> VO number, reference to VI and VQ, agreed price,
-                                    agreed time extension, signed by both parties</p>
+                                <h3 data-i18n="project.check.claims.item3">Cost Claim (Prolongation, Loss & Expense)
+                                </h3>
+                                <p data-i18n="project.check.claims.item3.desc">Cost breakdown (site overhead, equipment
+                                    idle time, labour, etc.), calculation basis, supporting invoices/receipts,
+                                    entitlement basis.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Valuation of Variation (if VO not agreed)</h3>
-                                <p><strong>Yang kami cek:</strong> Valuation method (daywork, measured work, etc.),
-                                    supporting documents (timesheets, material receipts)</p>
+                                <h3 data-i18n="project.check.claims.item4">Final Account Claim</h3>
+                                <p data-i18n="project.check.claims.item4.desc">Summary of all variations, all approved
+                                    claims, all deductions, retention release, final balance calculation</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">⏰ 3. Claims & Notices</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="project.check.payment.title">💵 4. Payment Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Notice of Delay (Early Warning)</h3>
-                                <p><strong>Yang kami cek:</strong> Date of notice, event causing delay, reference to
-                                    contract clause, submitted within time bar (e.g., 14/28 days), delivered to correct
-                                    party.</p>
-                                <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;"><strong>Time
-                                        bar:</strong> Jika notice terlambat, claim bisa otomatis invalid</p>
+                                <h3 data-i18n="project.check.payment.item1">Payment Application (Interim Certificate)
+                                </h3>
+                                <p data-i18n="project.check.payment.item1.desc">Application number, cut-off date, value
+                                    of work done (% completion per item), variations included, previous payments
+                                    deducted, retention held.</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>EOT (Extension of Time) Claim</h3>
-                                <p><strong>Yang kami cek:</strong> Claim reference number, event description, delay
-                                    analysis (as-planned vs as-built), critical path impact, supporting documents
-                                    (notice, correspondence, photos, weather data), time extension requested, submitted
-                                    within contractual deadline.</p>
+                                <h3 data-i18n="project.check.payment.item2">Measurement Sheets (S-Curve)</h3>
+                                <p data-i18n="project.check.payment.item2.desc">Measured quantities match payment claim,
+                                    signed by site supervisor/QS, photos of completed works</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Cost Claim (Prolongation Cost, Loss & Expense)</h3>
-                                <p><strong>Yang kami cek:</strong> Cost breakdown (site overhead, equipment idle time,
-                                    labour, etc.), calculation basis, supporting invoices/receipts, entitlement basis
-                                    (contract clause reference).</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Final Account Claim</h3>
-                                <p><strong>Yang kami cek:</strong> Summary of all variations, all approved claims, all
-                                    deductions, retention release, final balance calculation</p>
+                                <h3 data-i18n="project.check.payment.item3">Payment Certificate</h3>
+                                <p data-i18n="project.check.payment.item3.desc">Certificate number, certified amount,
+                                    payment due date (e.g., 14/30 days), signature and stamp</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">💵 4. Payment Documents</h3>
+                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;"
+                        data-i18n="project.check.support.title">📸 5. Supporting Documents</h3>
                     <ul class="feature-list">
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Payment Application (Interim Certificate)</h3>
-                                <p><strong>Yang kami cek:</strong> Application number, cut-off date, value of work done
-                                    (% completion per item), variations included, previous payments deducted, retention
-                                    held, VAT calculation, net amount claimed.</p>
+                                <h3 data-i18n="project.check.support.item1">Progress Photos</h3>
+                                <p data-i18n="project.check.support.item1.desc">Dated photos showing work in progress,
+                                    before/after conditions</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Measurement Sheets (S-Curve)</h3>
-                                <p><strong>Yang kami cek:</strong> Measured quantities match payment claim, signed by
-                                    site supervisor/QS, photos of completed works</p>
+                                <h3 data-i18n="project.check.support.item2">Site Meeting Minutes</h3>
+                                <p data-i18n="project.check.support.item2.desc">Decisions made, instructions given,
+                                    attendees list, action items</p>
                             </div>
                         </li>
                         <li class="feature-item">
                             <span class="feature-icon">✓</span>
                             <div>
-                                <h3>Payment Certificate (issued by Engineer/Consultant)</h3>
-                                <p><strong>Yang kami cek:</strong> Certificate number, certified amount, payment due
-                                    date (e.g., 14/30 days), signature and stamp</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Invoice</h3>
-                                <p><strong>Yang kami cek:</strong> Invoice amount matches certified amount, tax invoice
-                                    format (for VAT), payment terms</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="card" style="padding: 2rem; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary-600); margin-bottom: 1.5rem;">📸 5. Supporting Documents</h3>
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Progress Photos</h3>
-                                <p>Dated photos showing work in progress, before/after conditions</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Site Meeting Minutes</h3>
-                                <p>Decisions made, instructions given, attendees list, action items</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Inspection & Test Reports</h3>
-                                <p>Quality control reports, material test certificates, third-party inspections</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>As-Built Drawings</h3>
-                                <p>Updated drawings showing actual construction vs original design</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h3>Correspondence Log</h3>
-                                <p>Letters, emails, RFIs (Request for Information), technical queries</p>
+                                <h3 data-i18n="project.check.support.item3">Inspection & Test Reports</h3>
+                                <p data-i18n="project.check.support.item3.desc">Quality control reports, material test
+                                    certificates, third-party inspections</p>
                             </div>
                         </li>
                     </ul>
@@ -357,75 +325,86 @@
     <section id="common-issues" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Problem Prevention</span>
-                <h2 style="margin-top: 1rem;">7 Masalah Konstruksi Paling Sering</h2>
-                <p>Dan bagaimana TertibDocs mencegahnya</p>
+                <span class="pill" data-i18n="project.issues.pill">Problem Prevention</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.issues.title">7 Masalah Konstruksi Paling Sering</h2>
+                <p data-i18n="project.issues.subtitle">Dan bagaimana TertibDocs mencegahnya</p>
             </div>
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">1. Time Bar - Notice Terlambat</h3>
-                    <p><strong>Masalah:</strong> Kontraktor submit EOT claim setelah deadline notice period (misalnya:
-                        28 hari dari kejadian). Claim langsung invalid karena time bar provisions.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Track semua
-                        events yang berpotensi delay. Alert jika mendekati deadline notice. Cek apakah notice sudah
-                        disampaikan dengan format yang benar.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue1.title">1. Time Bar - Notice Terlambat
+                    </h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue1.problem">Kontraktor submit EOT claim setelah deadline notice
+                            period. Claim invalid.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue1.sol">Track events, alert deadline notice, cek
+                            format notice.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">2. Variation Tanpa VI Tertulis</h3>
-                    <p><strong>Masalah:</strong> Kontraktor lakukan extra work based on verbal instruction atau site
-                        instruction saja (bukan formal VI). Saat claim payment, ditolak karena "no written Variation
-                        Instruction".</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Flag jika
-                        ada pekerjaan variasi tanpa VI reference. Verifikasi apakah VI signed by authorized person dan
-                        sesuai contract requirement.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue2.title">2. Variation Tanpa VI Tertulis
+                    </h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue2.problem">Kontraktor lakukan extra work tanpa VI tertulis. Payment
+                            claim ditolak.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue2.sol">Flag pekerjaan variasi tanpa VI
+                            reference. Verifikasi signature.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">3. Programme of Works Tidak Di-Update</h3>
-                    <p><strong>Masalah:</strong> Kontraktor claim EOT tapi tidak ada updated programme showing delay
-                        impact. Engineer reject karena "no demonstrable effect on critical path".</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Check apakah
-                        ada baseline programme, updated programme, dan delay analysis (as-planned vs as-built). Flag
-                        missing programme documents.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue3.title">3. Programme of Works Tidak
+                        Di-Update</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue3.problem">Kontraktor claim EOT tapi tidak ada updated programme.
+                            Engineer reject.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue3.sol">Check baseline vs updated programme,
+                            delay analysis.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">4. Payment Claim Tidak Match dengan BOQ</h3>
-                    <p><strong>Masalah:</strong> Payment application claim 80% completion untuk item tertentu, tapi
-                        measured quantity atau photos tidak mendukung. Consultant reduce certified amount atau tahan
-                        payment.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Cross-check
-                        payment claim vs BOQ items, measurement sheets, dan progress photos. Verifikasi konsistensi %
-                        completion.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue4.title">4. Payment Claim Tidak Match
+                        dengan BOQ</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue4.problem">Payment claim 80% completion tapi measured quantity tidak
+                            mendukung.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue4.sol">Cross-check payment claim vs BOQ,
+                            measurement sheets.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">5. Missing Contemporaneous Records</h3>
-                    <p><strong>Masalah:</strong> Claim EOT for delay tapi tidak ada daily records, site diary, weather
-                        log, atau photos dari kejadian. Difficult to prove cause and effect.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Check
-                        availability of supporting documents: site diary, weather data, correspondence, photos with
-                        dates. Flag if claim lacks contemporaneous evidence.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue5.title">5. Missing Contemporaneous
+                        Records</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue5.problem">Claim EOT for delay tapi tidak ada daily records atau
+                            site diary.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue5.sol">Check availability of supporting
+                            documents.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">6. Cost Claim Tanpa Proper Substantiation</h3>
-                    <p><strong>Masalah:</strong> Kontraktor claim prolongation cost tapi hanya kasih lump sum figure
-                        tanpa breakdown atau supporting receipts. Claim ditolak atau heavily reduced.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Verifikasi
-                        apakah cost claim punya breakdown detail (labour, equipment, materials, overhead), supporting
-                        invoices, dan calculation method yang reasonable.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue6.title">6. Cost Claim Tanpa Proper
+                        Substantiation</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue6.problem">Kontraktor claim prolongation cost hanya lump sum tanpa
+                            breakdown. Ditolak.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue6.sol">Verifikasi cost breakdown detail dan
+                            supporting invoices.</span></p>
                 </div>
 
                 <div class="card" style="padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent);">
-                    <h3 style="color: var(--accent);">7. Retention & Bank Guarantee Tidak Clear</h3>
-                    <p><strong>Masalah:</strong> Kontraktor tidak tahu berapa retention yang sudah di-hold, kapan
-                        release 50% at practical completion, dan apakah bisa substitute dengan bank guarantee. Final
-                        payment jadi lama.</p>
-                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong>Solusi kami:</strong> Track
-                        retention percentage per payment certificate. Alert jika mencapai threshold untuk bank guarantee
-                        substitution atau practical completion release.</p>
+                    <h3 style="color: var(--accent);" data-i18n="project.issue7.title">7. Retention & Bank Guarantee
+                        Tidak Clear</h3>
+                    <p><strong data-i18n="problem.title">Masalah:</strong> <span
+                            data-i18n="project.issue7.problem">Kontraktor tidak tahu retention yang di-hold, kapan
+                            release.</span></p>
+                    <p style="color: var(--primary-700); margin-top: 0.5rem;"><strong data-i18n="solution.title">Solusi
+                            kami:</strong> <span data-i18n="project.issue7.sol">Track retention percentage per payment
+                            certificate.</span></p>
                 </div>
             </div>
         </div>
@@ -435,42 +414,45 @@
     <section id="how-it-works" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Proses Verifikasi</span>
-                <h2 style="margin-top: 1rem;">Cara Kerja TertibDocs untuk Konstruksi</h2>
-                <p>4 langkah mudah untuk dokumen konstruksi yang tertib</p>
+                <span class="pill" data-i18n="project.how.pill">Proses Verifikasi</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.how.title">Cara Kerja TertibDocs untuk Konstruksi</h2>
+                <p data-i18n="project.how.subtitle">4 langkah mudah untuk dokumen konstruksi yang tertib</p>
             </div>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Upload Dokumen Proyek Anda</h3>
-                        <p>Upload Contract, VI/VO, Notices, Claims, Payment Certificates, Programme, photos, dan semua
-                            dokumen terkait. Sistem auto-classify berdasarkan tipe dokumen.</p>
+                        <h3 data-i18n="project.how.step1.title">Upload Dokumen Proyek Anda</h3>
+                        <p data-i18n="project.how.step1.desc">Upload Contract, VI/VO, Notices, Claims, Payment
+                            Certificates, Programme, photos, dan semua dokumen terkait. Sistem auto-classify berdasarkan
+                            tipe dokumen.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>AI Ekstrak Data Kontrak</h3>
-                        <p>AI extract contract dates, time bars, notice requirements, payment terms, LD rates, retention
-                            %, parties, dan semua data critical dari kontrak dan supporting docs.</p>
+                        <h3 data-i18n="project.how.step2.title">AI Ekstrak Data Kontrak</h3>
+                        <p data-i18n="project.how.step2.desc">AI extract contract dates, time bars, notice requirements,
+                            payment terms, LD rates, retention %, parties, dan semua data critical dari kontrak dan
+                            supporting docs.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Checklist Compliance</h3>
-                        <p>Sistem verify compliance dengan contract requirements: notice deadlines met, VI properly
-                            authorized, claims properly substantiated, payment calculations correct, time bar
-                            compliance.</p>
+                        <h3 data-i18n="project.how.step3.title">Checklist Compliance</h3>
+                        <p data-i18n="project.how.step3.desc">Sistem verify compliance dengan contract requirements:
+                            notice deadlines met, VI properly authorized, claims properly substantiated, payment
+                            calculations correct, time bar compliance.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Download Laporan & Flag Risks</h3>
-                        <p>Dapatkan report dengan status PASS/WARN/FAIL untuk setiap requirement. Lengkap dengan action
-                            items untuk strengthen claims atau fix documentation gaps.</p>
+                        <h3 data-i18n="project.how.step4.title">Download Laporan & Flag Risks</h3>
+                        <p data-i18n="project.how.step4.desc">Dapatkan report dengan status PASS/WARN/FAIL untuk setiap
+                            requirement. Lengkap dengan action items untuk strengthen claims atau fix documentation
+                            gaps.</p>
                     </div>
                 </div>
             </div>
@@ -481,59 +463,61 @@
     <section id="sample-output" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Contoh Output</span>
-                <h2 style="margin-top: 1rem;">Contoh Laporan Verifikasi Konstruksi</h2>
+                <span class="pill" data-i18n="project.sample.pill">Contoh Output</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.sample.title">Contoh Laporan Verifikasi Konstruksi</h2>
             </div>
             <div class="card" style="max-width: 800px; margin: 0 auto; padding: 2rem;">
-                <h3 style="margin-bottom: 1.5rem;">Verification Report - Mall Construction Project</h3>
+                <h3 style="margin-bottom: 1.5rem;" data-i18n="project.sample.report_title">Verification Report - Mall
+                    Construction Project</h3>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; margin-bottom: 1rem;">
-                    <strong style="color: #059669;">✓ PASS:</strong> Main Contract Agreement signed and dated, all
-                    parties identified
+                    <strong style="color: #059669;">✓ PASS:</strong> <span data-i18n="project.sample.pass1">Main
+                        Contract Agreement signed and dated, all parties identified</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; margin-bottom: 1rem;">
-                    <strong style="color: #059669;">✓ PASS:</strong> Baseline Programme present with critical path and
-                    milestone dates
+                    <strong style="color: #059669;">✓ PASS:</strong> <span data-i18n="project.sample.pass2">Baseline
+                        Programme present with critical path and milestone dates</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(251, 191, 36, 0.1); border-left: 4px solid #f59e0b; margin-bottom: 1rem;">
-                    <strong style="color: #d97706;">⚠ WARN:</strong> Variation Order VO-023 references VI-023, but
-                    VI-023 not found in uploaded documents. Ensure VI is obtained before proceeding.
+                    <strong style="color: #d97706;">⚠ WARN:</strong> <span data-i18n="project.sample.warn1">Variation
+                        Order VO-023 references VI-023, but VI-023 not found in uploaded documents. Ensure VI is
+                        obtained before proceeding.</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; margin-bottom: 1rem;">
-                    <strong style="color: #dc2626;">✗ FAIL:</strong> EOT Claim #5 submitted on 2025-12-15, but delay
-                    event occurred on 2025-11-02. Contract requires notice within 14 days. TIME BAR RISK - claim may be
-                    rejected.
+                    <strong style="color: #dc2626;">✗ FAIL:</strong> <span data-i18n="project.sample.fail1">EOT Claim #5
+                        submitted on 2025-12-15, but delay event occurred on 2025-11-02. Contract requires notice within
+                        14 days. TIME BAR RISK - claim may be rejected.</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; margin-bottom: 1rem;">
-                    <strong style="color: #dc2626;">✗ FAIL:</strong> Payment Certificate #8 claims IDR 2.4 billion, but
-                    no measurement sheets or progress photos uploaded to support valuation.
+                    <strong style="color: #dc2626;">✗ FAIL:</strong> <span data-i18n="project.sample.fail2">Payment
+                        Certificate #8 claims IDR 2.4 billion, but no measurement sheets or progress photos uploaded to
+                        support valuation.</span>
                 </div>
 
                 <div
                     style="padding: 0.75rem; border-radius: 8px; background: rgba(251, 191, 36, 0.1); border-left: 4px solid #f59e0b; margin-bottom: 1rem;">
-                    <strong style="color: #d97706;">⚠ WARN:</strong> Cost Claim for prolongation shows lumpsum IDR 500
-                    million without detailed breakdown. Likely to be challenged - recommend adding cost substantiation.
+                    <strong style="color: #d97706;">⚠ WARN:</strong> <span data-i18n="project.sample.warn2">Cost Claim
+                        for prolongation shows lumpsum IDR 500 million without detailed breakdown. Likely to be
+                        challenged - recommend adding cost substantiation.</span>
                 </div>
 
                 <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(148, 163, 184, 0.2);">
-                    <h4 style="color: var(--primary-700);">Recommended Actions:</h4>
+                    <h4 style="color: var(--primary-700);" data-i18n="project.sample.rec">Recommended Actions:</h4>
                     <ol style="color: #64748b; margin-top: 0.5rem;">
-                        <li><strong>Urgent:</strong> Review EOT Claim #5 - consider withdrawal and resubmission with
-                            proper contemporaneous notice, or argue that time bar should not apply due to continuing
-                            event</li>
-                        <li>Obtain missing VI-023 or confirm that VO-023 was based on agreed rates/daywork</li>
-                        <li>Prepare measurement sheets and upload photos for Payment Certificate #8</li>
-                        <li>Add detailed breakdown for prolongation cost claim (daily site overhead, equipment idle
-                            time, extended prelims)</li>
+                        <li data-i18n="project.sample.act1">Urgent: Review EOT Claim #5 - withdrawal/resubmit with
+                            proper notice</li>
+                        <li data-i18n="project.sample.act2">Obtain missing VI-023</li>
+                        <li data-i18n="project.sample.act3">Prepare measurement sheets/photos for Payment Cert #8</li>
+                        <li data-i18n="project.sample.act4">Add detailed breakdown for prolongation cost claim</li>
                     </ol>
                 </div>
             </div>
@@ -544,40 +528,31 @@
     <section id="contract-forms" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">Contract Standards</span>
-                <h2 style="margin-top: 1rem;">Mendukung Berbagai Standard Form Contract</h2>
+                <span class="pill" data-i18n="project.forms.pill">Contract Standards</span>
+                <h2 style="margin-top: 1rem;" data-i18n="project.forms.title">Mendukung Berbagai Standard Form Contract
+                </h2>
             </div>
             <div class="grid">
                 <div class="card">
-                    <h3>FIDIC (International)</h3>
-                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong>Familiar
-                            dengan:</strong></p>
-                    <ul style="text-align: left; color: #64748b; font-size: 0.875rem;">
-                        <li>✓ Red Book (Building & Engineering)</li>
-                        <li>✓ Yellow Book (Plant & Design-Build)</li>
-                        <li>✓ Silver Book (EPC/Turnkey)</li>
-                        <li>✓ Clause 20 (Claim procedures)</li>
-                    </ul>
+                    <h3 data-i18n="project.forms.fidic.title">FIDIC (International)</h3>
+                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong
+                            data-i18n="project.forms.fidic.desc">Familiar dengan:</strong></p>
+                    <p style="color: #64748b; font-size: 0.875rem;" data-i18n="project.forms.fidic.list">Red Book,
+                        Yellow Book, Silver Book, Clause 20 Claim Procedures.</p>
                 </div>
                 <div class="card">
-                    <h3>JKR / Kontrak Pemerintah</h3>
-                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong>Familiar
-                            dengan:</strong></p>
-                    <ul style="text-align: left; color: #64748b; font-size: 0.875rem;">
-                        <li>✓ Kontrak JKR Malaysia</li>
-                        <li>✓ Kontrak PWD/Government</li>
-                        <li>✓ Peraturan Presiden (Perpres) Pengadaan</li>
-                    </ul>
+                    <h3 data-i18n="project.forms.jkr.title">JKR / Kontrak Pemerintah</h3>
+                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong
+                            data-i18n="project.forms.jkr.desc">Familiar dengan:</strong></p>
+                    <p style="color: #64748b; font-size: 0.875rem;" data-i18n="project.forms.jkr.list">Kontrak JKR
+                        Malaysia, PWD, Peraturan Presiden (Perpres) Pengadaan.</p>
                 </div>
                 <div class="card">
-                    <h3>Kontrak Lokal & Custom</h3>
-                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong>Kami
-                            support:</strong></p>
-                    <ul style="text-align: left; color: #64748b; font-size: 0.875rem;">
-                        <li>✓ Kontrak developer/kontraktor lokal</li>
-                        <li>✓ Kontrak custom/modified</li>
-                        <li>✓ Extract requirements dari kontrak apapun</li>
-                    </ul>
+                    <h3 data-i18n="project.forms.custom.title">Kontrak Lokal & Custom</h3>
+                    <p class="mb-2" style="font-size: 0.875rem; color: var(--primary-700);"><strong
+                            data-i18n="project.forms.custom.desc">Kami support:</strong></p>
+                    <p style="color: #64748b; font-size: 0.875rem;" data-i18n="project.forms.custom.list">Kontrak
+                        developer/kontraktor lokal, kontrak custom/modified.</p>
                 </div>
             </div>
         </div>
@@ -587,12 +562,13 @@
     <section id="cta" class="fade-in">
         <div class="container">
             <div class="card text-center" style="max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem;">
-                <h2>Siap Verifikasi Dokumen Konstruksi Anda?</h2>
-                <p class="mb-3">Upload dokumen proyek sekarang dan pastikan claims dan payments Anda solid</p>
+                <h2 data-i18n="project.cta.title">Siap Verifikasi Dokumen Konstruksi Anda?</h2>
+                <p class="mb-3" data-i18n="project.cta.subtitle">Upload dokumen proyek sekarang dan pastikan claims dan
+                    payments Anda solid</p>
                 <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-                    <a href="" class="btn btn-primary">Mulai Verifikasi Proyek</a>
+                    <a href="" class="btn btn-primary" data-i18n="project.cta.primary">Mulai Verifikasi Proyek</a>
                     <a href="https://wa.me/6281388889818?text=Hallo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20verifikasi%20dokumen%20konstruksi"
-                        class="btn btn-secondary">Hubungi Sales untuk Demo</a>
+                        class="btn btn-secondary" data-i18n="project.cta.secondary">Hubungi Sales untuk Demo</a>
                 </div>
             </div>
         </div>
@@ -603,26 +579,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-disclaimer">
-                    ⚠️ <strong>Disclaimer:</strong> TertibDocs tidak memberikan nasihat hukum, quantity surveying, atau
-                    engineering services. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa
-                    konstruksi.
+                    ⚠️ <strong>Disclaimer:</strong> <span data-i18n="project.footer.disclaimer">TertibDocs tidak
+                        memberikan nasihat hukum, quantity surveying, atau
+                        engineering services. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa
+                        konstruksi.</span>
                 </div>
 
                 <ul class="footer-links">
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="#construction-checklist">Checklist</a></li>
-                    <li><a href="#common-issues">Masalah Umum</a></li>
-                    <li><a href="https://wa.me/6281388889818">Kontak</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="#construction-checklist" data-i18n="nav.checklist">Checklist</a></li>
+                    <li><a href="#common-issues" data-i18n="nav.issues">Masalah Umum</a></li>
+                    <li><a href="https://wa.me/6281388889818" data-i18n="footer.contact">Kontak</a></li>
                 </ul>
             </div>
 
-            <div class="footer-copyright">
+            <div class="footer-copyright" data-i18n="footer.copyright">
                 &copy; 2026 TertibDocs. All rights reserved. Construction verification made easy.
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 

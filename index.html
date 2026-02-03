@@ -48,11 +48,17 @@
 
             <!-- Desktop Menu -->
             <ul class="nav-menu">
-                <li><a href="#features">Fitur</a></li>
-                <li><a href="#niches">Use Cases</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
-                <li><a href="#cta">Mulai</a></li>
+                <li><a href="#features" data-i18n="nav.features">Fitur</a></li>
+                <li><a href="#niches" data-i18n="nav.usecases">Use Cases</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
+                <li><a href="#cta" data-i18n="nav.start">Mulai</a></li>
             </ul>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle">
+                <button id="lang-id" class="lang-btn active" type="button">ID</button>
+                <button id="lang-en" class="lang-btn" type="button">EN</button>
+            </div>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
@@ -63,10 +69,10 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <ul>
-                <li><a href="#features">Fitur</a></li>
-                <li><a href="#niches">Use Cases</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
-                <li><a href="#cta">Mulai</a></li>
+                <li><a href="#features" data-i18n="nav.features">Fitur</a></li>
+                <li><a href="#niches" data-i18n="nav.usecases">Use Cases</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
+                <li><a href="#cta" data-i18n="nav.start">Mulai</a></li>
             </ul>
         </div>
     </nav>
@@ -75,29 +81,34 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="pill animate-rise">Verifikasi dokumen, bukan drama</span>
-                <h1>Rapikan dokumen sebelum sengketa membesar.</h1>
-                <p class="hero-subtitle">
+                <span class="pill animate-rise" data-i18n="hero.pill">Verifikasi dokumen, bukan drama</span>
+                <h1 data-i18n="hero.title">Rapikan dokumen sebelum sengketa membesar.</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
                     TertibDocs membantu tim legal, finance, dan operasional menjaga kontrak tetap tertib, lengkap, dan
                     siap audit dalam hitungan menit.
                 </p>
                 <div class="hero-cta">
-                    <a href="" class="btn btn-primary">Mulai verifikasi</a>
-                    <a href="#how-it-works" class="btn btn-outline">Lihat cara kerja</a>
+                    <a href="../frontend" class="btn btn-primary" data-i18n="hero.cta.primary">Mulai verifikasi</a>
+                    <a href="#how-it-works" class="btn btn-outline" data-i18n="hero.cta.secondary">Lihat cara kerja</a>
                 </div>
                 <div class="surface"
                     style="padding: 1rem; margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
                     <div>
-                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;">3 menit</p>
-                        <p style="font-size: 0.875rem; margin: 0;">Ringkas risiko utama</p>
+                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;"
+                            data-i18n="hero.stat1.title">3 menit</p>
+                        <p style="font-size: 0.875rem; margin: 0;" data-i18n="hero.stat1.desc">Ringkas risiko utama</p>
                     </div>
                     <div>
-                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;">3 kategori</p>
-                        <p style="font-size: 0.875rem; margin: 0;">Track verifikasi sesuai jalur anda</p>
+                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;"
+                            data-i18n="hero.stat2.title">3 kategori</p>
+                        <p style="font-size: 0.875rem; margin: 0;" data-i18n="hero.stat2.desc">Track verifikasi sesuai
+                            jalur anda</p>
                     </div>
                     <div>
-                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;">ODR-ready</p>
-                        <p style="font-size: 0.875rem; margin: 0;">Negosiasi jika diperlukan</p>
+                        <p style="font-weight: 600; color: var(--ink); margin-bottom: 0.25rem;"
+                            data-i18n="hero.stat3.title">ODR-ready</p>
+                        <p style="font-size: 0.875rem; margin: 0;" data-i18n="hero.stat3.desc">Negosiasi jika diperlukan
+                        </p>
                     </div>
                 </div>
             </div>
@@ -105,71 +116,80 @@
     </section>
 
     <!-- Problem Statement -->
-    <section id="problem" class="fade-in">
+    <section id="features" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Masalah yang Sering Terjadi</h2>
-                <p>Dokumen yang tidak lengkap atau inkonsisten dapat menyebabkan kerugian besar</p>
+                <span class="pill" data-i18n="problem.pill">Masalah Umum</span>
+                <h2 style="margin-top: 1rem;" data-i18n="problem.title">Masalah yang Sering Terjadi</h2>
+                <p data-i18n="problem.subtitle">Dokumen yang tidak lengkap atau inkonsisten dapat menyebabkan kerugian
+                    besar</p>
             </div>
             <div class="grid">
                 <div class="card">
                     <div class="feature-icon">⚠️</div>
-                    <h3>Pengiriman Ditolak</h3>
-                    <p>Dokumen ekspor-impor tidak sesuai dengan kontrak atau invoice, menyebabkan barang ditahan di bea
+                    <h3 data-i18n="problem.card1.title">Pengiriman Ditolak</h3>
+                    <p data-i18n="problem.card1.desc">Dokumen ekspor-impor tidak sesuai dengan kontrak atau invoice,
+                        menyebabkan barang ditahan di bea
                         cukai.</p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">💸</div>
-                    <h3>Pembayaran Gagal</h3>
-                    <p>Klien menolak bayar karena invoice tidak cocok dengan perjanjian atau bukti pengiriman hilang.
+                    <h3 data-i18n="problem.card2.title">Pembayaran Gagal</h3>
+                    <p data-i18n="problem.card2.desc">Klien menolak bayar karena invoice tidak cocok dengan perjanjian
+                        atau bukti pengiriman hilang.
                     </p>
                 </div>
                 <div class="card">
                     <div class="feature-icon">📋</div>
-                    <h3>Klaim Tidak Valid</h3>
-                    <p>Claim proyek konstruksi ditolak karena variasi order atau notice tidak terdokumentasi dengan
+                    <h3 data-i18n="problem.card3.title">Klaim Tidak Valid</h3>
+                    <p data-i18n="problem.card3.desc">Claim proyek konstruksi ditolak karena variasi order atau notice
+                        tidak terdokumentasi dengan
                         benar.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solution Overview -->
-    <section id="solution" class="fade-in">
+    <!-- Solution Preview -->
+    <section class="fade-in" style="background: var(--paper);">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Solusi TerTibDocs</h2>
-                <p>Cegah masalah sebelum terlambat dengan verifikasi otomatis</p>
+                <h2 data-i18n="solution.title">Solusi TerTibDocs</h2>
+                <p data-i18n="solution.subtitle">Cegah masalah sebelum terlambat dengan verifikasi otomatis</p>
             </div>
             <ul class="feature-list">
                 <li class="feature-item">
                     <span class="feature-icon">✓</span>
                     <div>
-                        <h3>Verifikasi Kelengkapan Dokumen</h3>
-                        <p>Sistem kami memeriksa apakah semua dokumen yang diperlukan sudah ada sesuai dengan jenis
+                        <h3 data-i18n="solution.item1.title">Verifikasi Kelengkapan Dokumen</h3>
+                        <p data-i18n="solution.item1.desc">Sistem kami memeriksa apakah semua dokumen yang diperlukan
+                            sudah ada sesuai dengan jenis
                             transaksi Anda.</p>
                     </div>
                 </li>
                 <li class="feature-item">
                     <span class="feature-icon">🔍</span>
                     <div>
-                        <h3>Deteksi Inkonsistensi</h3>
-                        <p>Bandingkan otomatis data kunci seperti jumlah, tanggal, pihak, dan syarat pembayaran antar
+                        <h3 data-i18n="solution.item2.title">Deteksi Inkonsistensi</h3>
+                        <p data-i18n="solution.item2.desc">Bandingkan otomatis data kunci seperti jumlah, tanggal,
+                            pihak, dan syarat pembayaran antar
                             dokumen.</p>
                     </div>
                 </li>
                 <li class="feature-item">
                     <span class="feature-icon">📊</span>
                     <div>
-                        <h3>Laporan Verifikasi Profesional</h3>
-                        <p>Download laporan PDF dengan status PASS/WARN/FAIL untuk setiap checklist item.</p>
+                        <h3 data-i18n="solution.item3.title">Laporan Verifikasi Profesional</h3>
+                        <p data-i18n="solution.item3.desc">Download laporan PDF dengan status PASS/WARN/FAIL untuk
+                            setiap checklist item.</p>
                     </div>
                 </li>
                 <li class="feature-item">
                     <span class="feature-icon">🤝</span>
                     <div>
-                        <h3>Negosiasi Terstruktur</h3>
-                        <p>Jika ada masalah, selesaikan dengan ruang negosiasi built-in, bahkan eskalasi ke mediasi jika
+                        <h3 data-i18n="solution.item4.title">Negosiasi Terstruktur</h3>
+                        <p data-i18n="solution.item4.desc">Jika ada masalah, selesaikan dengan ruang negosiasi built-in,
+                            bahkan eskalasi ke mediasi jika
                             diperlukan.</p>
                     </div>
                 </li>
@@ -181,56 +201,61 @@
     <section id="niches" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <span class="pill">3 jalur verifikasi</span>
-                <h2 style="margin-top: 1rem;">Pilih kategori dokumen Anda</h2>
-                <p>Setiap jalur punya checklist dan laporan yang disesuaikan</p>
+                <span class="pill" data-i18n="niches.pill">3 jalur verifikasi</span>
+                <h2 style="margin-top: 1rem;" data-i18n="niches.title">Pilih kategori dokumen Anda</h2>
+                <p data-i18n="niches.subtitle">Setiap jalur punya checklist dan laporan yang disesuaikan</p>
             </div>
             <div class="grid">
                 <!-- Trade Niche -->
                 <div class="card niche-card">
                     <div class="niche-icon">🌐</div>
-                    <span class="niche-badge">Jalur 1</span>
-                    <h3>Trade / Perdagangan</h3>
-                    <p class="mb-2">Untuk bisnis ekspor-impor, sales contract, dan shipping documents</p>
+                    <span class="niche-badge" data-i18n="trade.hero.pill">Jalur 1</span>
+                    <h3 data-i18n="niches.trade.title">Trade / Perdagangan</h3>
+                    <p class="mb-2" data-i18n="niches.trade.desc">Untuk bisnis ekspor-impor, sales contract, dan
+                        shipping documents</p>
                     <ul style="text-align: left; color: #94a3b8; font-size: 0.9rem;">
-                        <li>✓ Kontrak jual-beli ada</li>
-                        <li>✓ Incoterms lengkap & versioned</li>
-                        <li>✓ Invoice cocok dengan kontrak</li>
-                        <li>✓ Dokumen pengiriman lengkap</li>
-                        <li>✓ Syarat pembayaran selaras</li>
+                        <li data-i18n="niches.trade.item1">✓ Kontrak jual-beli ada</li>
+                        <li data-i18n="niches.trade.item2">✓ Incoterms lengkap & versioned</li>
+                        <li data-i18n="niches.trade.item3">✓ Invoice cocok dengan kontrak</li>
+                        <li data-i18n="niches.trade.item4">✓ Dokumen pengiriman lengkap</li>
+                        <li data-i18n="niches.trade.item5">✓ Syarat pembayaran selaras</li>
                     </ul>
-                    <a href="trade.html" class="btn btn-outline" style="margin-top: 1rem; width: 100%;">Pelajari Lebih
+                    <a href="trade.html" class="btn btn-outline" style="margin-top: 1rem; width: 100%;"
+                        data-i18n="niches.learn">Pelajari Lebih
                         Lanjut →</a>
                 </div>
 
                 <!-- Personal Niche -->
                 <div class="card niche-card">
                     <div class="niche-icon">👨‍👩‍👧</div>
-                    <span class="niche-badge">Jalur B</span>
-                    <h3>Personal / Keluarga</h3>
-                    <p class="mb-2">Untuk family business, pinjaman personal, dan partnership informal</p>
+                    <span class="niche-badge" data-i18n="niches.pill">Jalur B</span>
+                    <h3 data-i18n="niches.personal.title">Personal / Keluarga</h3>
+                    <p class="mb-2" data-i18n="niches.personal.desc">Untuk family business, pinjaman personal, dan
+                        partnership informal</p>
                     <ul style="text-align: left; color: #94a3b8; font-size: 0.9rem;">
-                        <li>✓ Perjanjian tertulis ada</li>
-                        <li>✓ Wewenang terdokumentasi</li>
-                        <li>✓ Bukti aliran uang</li>
-                        <li>✓ Exit clause ada</li>
+                        <li data-i18n="niches.personal.item1">✓ Perjanjian tertulis ada</li>
+                        <li data-i18n="niches.personal.item2">✓ Wewenang terdokumentasi</li>
+                        <li data-i18n="niches.personal.item3">✓ Bukti aliran uang</li>
+                        <li data-i18n="niches.personal.item4">✓ Exit clause ada</li>
                     </ul>
                 </div>
 
                 <!-- Project Niche -->
                 <div class="card niche-card">
                     <div class="niche-icon">🏗️</div>
-                    <span class="niche-badge">Jalur 3</span>
-                    <h3>Project / Konstruksi</h3>
-                    <p class="mb-2">Untuk kontrak konstruksi, variation orders, dan claims</p>
+                    <span class="niche-badge" data-i18n="project.hero.pill">Jalur 3</span>
+                    <h3 data-i18n="niches.project.title">Project / Konstruksi</h3>
+                    <p class="mb-2" data-i18n="niches.project.desc">Untuk kontrak konstruksi, variation orders, dan
+                        claims</p>
                     <ul style="text-align: left; color: #94a3b8; font-size: 0.9rem;">
-                        <li>✓ Main contract uploaded</li>
-                        <li>✓ Variation instructions documented</li>
-                        <li>✓ Notice deadlines tracked</li>
-                        <li>✓ Programme baseline present</li>
-                        <li>✓ Payment application complete</li>
+                        <li data-i18n="niches.project.item1">✓ Main contract uploaded</li>
+                        <li data-i18n="niches.project.item2">✓ Variation instructions documented</li>
+                        <li data-i18n="niches.project.item3">✓ Notice deadlines tracked</li>
+                        <li data-i18n="niches.project.item4">✓ Programme baseline present</li>
+                        <li data-i18n="niches.project.item5">✓ Payment application complete</li>
                     </ul>
-                    <a href="project.html" class="btn btn-outline" style="margin-top: 1rem; width: 100%;">Pelajari Lebih
+                    <a href="project.html" class="btn btn-outline" style="margin-top: 1rem; width: 100%;"
+                        data-i18n="niches.learn">Pelajari Lebih
                         Lanjut →</a>
                 </div>
             </div>
@@ -241,78 +266,85 @@
     <section id="features" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Fitur Unggulan</h2>
-                <p>Teknologi canggih untuk verifikasi dokumen yang akurat</p>
+                <h2 data-i18n="features.title">Fitur Unggulan</h2>
+                <p data-i18n="features.subtitle">Teknologi canggih untuk verifikasi dokumen yang akurat</p>
             </div>
             <div class="grid">
                 <div class="card">
-                    <h3>🤖 Klasifikasi Otomatis</h3>
-                    <p>Upload PDF, gambar, atau chat export. Sistem kami otomatis mengenali tipe dokumen (contract,
+                    <h3 data-i18n="features.card1.title">🤖 Klasifikasi Otomatis</h3>
+                    <p data-i18n="features.card1.desc">Upload PDF, gambar, atau chat export. Sistem kami otomatis
+                        mengenali tipe dokumen (contract,
                         invoice, shipping docs, dll).</p>
                 </div>
                 <div class="card">
-                    <h3>📝 Ekstraksi Key Terms</h3>
-                    <p>AI ekstrak data penting: nama pihak, jumlah, tanggal, syarat pembayaran, dan klausul kritis
+                    <h3 data-i18n="features.card2.title">📝 Ekstraksi Key Terms</h3>
+                    <p data-i18n="features.card2.desc">AI ekstrak data penting: nama pihak, jumlah, tanggal, syarat
+                        pembayaran, dan klausul kritis
                         lainnya.</p>
                 </div>
                 <div class="card">
-                    <h3>✅ Checklist Engine</h3>
-                    <p>Deterministic validation: setiap item diberi status PASS, WARN, atau FAIL berdasarkan rules yang
+                    <h3 data-i18n="features.card3.title">✅ Checklist Engine</h3>
+                    <p data-i18n="features.card3.desc">Deterministic validation: setiap item diberi status PASS, WARN,
+                        atau FAIL berdasarkan rules yang
                         jelas.</p>
                 </div>
                 <div class="card">
-                    <h3>📄 Laporan PDF</h3>
-                    <p>Download verification report lengkap dengan missing document list dan inconsistency log.</p>
+                    <h3 data-i18n="features.card4.title">📄 Laporan PDF</h3>
+                    <p data-i18n="features.card4.desc">Download verification report lengkap dengan missing document list
+                        dan inconsistency log.</p>
                 </div>
                 <div class="card">
-                    <h3>🔐 Keamanan Data</h3>
-                    <p>Local-first RAG - data Anda tidak bocor ke cloud pihak ketiga. Audit log append-only untuk
+                    <h3 data-i18n="features.card5.title">🔐 Keamanan Data</h3>
+                    <p data-i18n="features.card5.desc">Local-first RAG - data Anda tidak bocor ke cloud pihak ketiga.
+                        Audit log append-only untuk
                         compliance.</p>
                 </div>
                 <div class="card">
-                    <h3>⚖️ ODR Lite</h3>
-                    <p>Ruang negosiasi untuk settlement. Eskalasi ke mediasi dan neutral appointment jika diperlukan.
+                    <h3 data-i18n="features.card6.title">⚖️ ODR Lite</h3>
+                    <p data-i18n="features.card6.desc">Ruang negosiasi untuk settlement. Eskalasi ke mediasi dan neutral
+                        appointment jika diperlukan.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
+    <!-- How it works -->
     <section id="how-it-works" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Cara Kerja</h2>
-                <p>Hanya 4 langkah sederhana untuk dokumen yang tertib</p>
+                <span class="pill" data-i18n="how.pill">Proses</span>
+                <h2 style="margin-top: 1rem;" data-i18n="how.title">Cara Kerja</h2>
+                <p data-i18n="how.subtitle">Hanya 4 langkah sederhana untuk dokumen yang tertib</p>
             </div>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Upload Dokumen</h3>
-                        <p>Upload semua dokumen terkait transaksi Anda. Bisa PDF, foto, atau screenshot.</p>
+                        <h3 data-i18n="how.step1.title">Upload Dokumen</h3>
+                        <p data-i18n="how.step1.desc">Upload kontrak, invoice, chat, dan bukti pembayaran.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Verifikasi Otomatis</h3>
-                        <p>Sistem akan klasifikasi, ekstrak data, dan jalankan checklist sesuai jalur Anda.</p>
+                        <h3 data-i18n="how.step2.title">Verifikasi Otomatis</h3>
+                        <p data-i18n="how.step2.desc">Sistem akan klasifikasi, ekstrak data, dan jalankan checklist
+                            sesuai jalur Anda.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Review Hasil</h3>
-                        <p>Lihat status PASS/WARN/FAIL. Download laporan verifikasi lengkap dalam PDF.</p>
+                        <h3 data-i18n="how.step3.title">Bereskan Masalah</h3>
+                        <p data-i18n="how.step3.desc">Lihat gap, risiko, dan hal yang perlu dilengkapi.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Selesaikan Masalah</h3>
-                        <p>Jika ada issue, gunakan ruang negosiasi untuk mencapai settlement atau eskalasi ke mediasi.
-                        </p>
+                        <h3 data-i18n="how.step4.title">Export & Negosiasi</h3>
+                        <p data-i18n="how.step4.desc">Jadikan laporan PDF untuk audit atau bahan negosiasi.</p>
                     </div>
                 </div>
             </div>
@@ -323,11 +355,11 @@
     <section id="tech" class="fade-in">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Teknologi Modern, Dibuat untuk Indonesia</h2>
-                <p>Backend dan frontend state-of-the-art</p>
+                <h2 data-i18n="tech.title">Teknologi Modern, Dibuat untuk Indonesia</h2>
+                <p data-i18n="tech.subtitle">Backend dan frontend state-of-the-art</p>
             </div>
             <div class="card text-center">
-                <h3 class="mb-3">Tech Stack</h3>
+                <h3 class="mb-3" data-i18n="tech.stack.title">Tech Stack</h3>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
                     <span
                         style="background: rgba(20, 184, 166, 0.1); padding: 0.5rem 1rem; border-radius: 20px; color: #14b8a6; font-weight: 600;">FastAPI</span>
@@ -345,15 +377,16 @@
                     <li class="feature-item">
                         <span class="feature-icon">🇮🇩</span>
                         <div>
-                            <h3>Bahasa Indonesia First</h3>
-                            <p>UI dan laporan mendukung Bahasa Indonesia dan English.</p>
+                            <h3 data-i18n="tech.feature1.title">Bahasa Indonesia First</h3>
+                            <p data-i18n="tech.feature1.desc">UI dan laporan mendukung Bahasa Indonesia dan English.</p>
                         </div>
                     </li>
                     <li class="feature-item">
                         <span class="feature-icon">🔒</span>
                         <div>
-                            <h3>Data Privacy</h3>
-                            <p>Local-first RAG, no external data leakage. Audit log untuk compliance.</p>
+                            <h3 data-i18n="tech.feature2.title">Data Privacy</h3>
+                            <p data-i18n="tech.feature2.desc">Local-first RAG, no external data leakage. Audit log untuk
+                                compliance.</p>
                         </div>
                     </li>
                 </ul>
@@ -361,16 +394,17 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- CTA -->
     <section id="cta" class="fade-in">
         <div class="container">
             <div class="card text-center" style="max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem;">
-                <h2>Siap Merapikan Dokumen Anda?</h2>
-                <p class="mb-3">Mulai verifikasi gratis dan cegah sengketa sebelum terlambat</p>
+                <h2 data-i18n="cta.title">Siap Merapikan Dokumen Anda?</h2>
+                <p class="mb-3" data-i18n="cta.subtitle">Mulai verifikasi gratis dan cegah sengketa sebelum terlambat
+                </p>
                 <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-                    <a href="" class="btn btn-primary">Mulai Verifikasi Gratis</a>
-                    <a href="https://wa.me/6281388889818?text=Hallo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs"
-                        class="btn btn-secondary">Hubungi Sales</a>
+                    <a href="../frontend" class="btn btn-primary" data-i18n="cta.primary">Mulai Verifikasi Gratis</a>
+                    <a href="https://wa.me/6281388889818" class="btn btn-secondary" data-i18n="cta.secondary">Hubungi
+                        Sales</a>
                 </div>
             </div>
         </div>
@@ -381,27 +415,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-disclaimer">
-                    ⚠️ <strong>Disclaimer:</strong> TerTibDocs tidak memberikan nasihat hukum. Platform ini hanya untuk
-                    verifikasi dokumen dan pencegahan sengketa.
+                    ⚠️ <strong>Disclaimer:</strong> <span data-i18n="footer.disclaimer">TertibDocs tidak memberikan
+                        nasihat hukum. Platform ini hanya untuk
+                        verifikasi dokumen dan pencegahan sengketa.</span>
                 </div>
 
                 <ul class="footer-links">
-                    <li><a href="#features">Fitur</a></li>
-                    <li><a href="#niches">Use Cases</a></li>
-                    <li><a href="#how-it-works">Cara Kerja</a></li>
-                    <li><a href="mailto:info@tertibdocs.com">Kontak</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#features" data-i18n="nav.features">Fitur</a></li>
+                    <li><a href="#niches" data-i18n="nav.usecases">Use Cases</a></li>
+                    <li><a href="#how-it-works" data-i18n="nav.how">Cara Kerja</a></li>
+                    <li><a href="https://wa.me/6281388889818" data-i18n="footer.contact">Kontak</a></li>
+                    <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
                 </ul>
             </div>
 
-            <div class="footer-copyright">
-                &copy; 2026 TerTibDocs. All rights reserved. Made with ❤️ for Indonesian businesses.
+            <div class="footer-copyright" data-i18n="footer.copyright">
+                &copy; 2026 TertibDocs. All rights reserved. Made with ❤️ for Indonesian businesses.
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 
