@@ -42,23 +42,58 @@ const translations = {
         // Solution Section
         'solution.title': 'Solusi TertibDocs',
         'solution.subtitle': 'Cegah masalah sebelum terlambat dengan verifikasi otomatis',
+        'solution.item1.title': 'Verifikasi Kelengkapan Dokumen',
+        'solution.item1.desc': 'Sistem kami memeriksa apakah semua dokumen yang diperlukan sudah ada sesuai dengan jenis transaksi Anda.',
+        'solution.item2.title': 'Deteksi Inkonsistensi',
+        'solution.item2.desc': 'Bandingkan otomatis data kunci seperti jumlah, tanggal, pihak, dan syarat pembayaran antar dokumen.',
+        'solution.item3.title': 'Laporan Gap Analysis',
+        'solution.item3.desc': 'Terima rekomendasi spesifik untuk memperbaiki dokumentasi sebelum sengketa terjadi.',
+        'solution.item4.title': 'Negosiasi Terstruktur',
+        'solution.item4.desc': 'Jika ada masalah, selesaikan dengan ruang negosiasi built-in, bahkan eskalasi ke mediasi jika diperlukan.',
 
         // Niches Section
-        'niches.pill': '3 jalur verifikasi',
+        'niches.pill': 'Jalur 2',
         'niches.title': 'Pilih kategori dokumen Anda',
         'niches.subtitle': 'Setiap jalur punya checklist dan laporan yang disesuaikan',
         'niches.learn': 'Pelajari Lebih Lanjut',
         'niches.trade.title': 'Trade / Perdagangan',
         'niches.trade.desc': 'Untuk bisnis ekspor-impor, sales contract, dan shipping documents',
+        'niches.trade.item1': '✓ Kontrak jual-beli ada',
+        'niches.trade.item2': '✓ Incoterms lengkap & versioned',
+        'niches.trade.item3': '✓ Invoice cocok dengan kontrak',
+        'niches.trade.item4': '✓ Dokumen pengiriman lengkap',
+        'niches.trade.item5': '✓ Syarat pembayaran selaras',
         'niches.project.title': 'Project / Konstruksi',
         'niches.project.desc': 'Untuk kontrak konstruksi, variation orders, dan claims',
+        'niches.project.item1': '✓ Kontrak utama lengkap',
+        'niches.project.item2': '✓ Variation order terdokumentasi',
+        'niches.project.item3': '✓ Notice disampaikan tepat waktu',
+        'niches.project.item4': '✓ Sertifikat pembayaran konsisten',
+        'niches.project.item5': '✓ Klaim tersubstansiasi dengan baik',
         'niches.personal.title': 'Personal / Keluarga',
         'niches.personal.desc': 'Untuk family business, pinjaman personal, dan partnership informal',
+        'niches.personal.item1': '✓ Perjanjian tertulis ada',
+        'niches.personal.item2': '✓ Wewenang terdokumentasi',
+        'niches.personal.item3': '✓ Bukti aliran uang',
+        'niches.personal.item4': '✓ Exit clause ada',
 
         // Features Section
         'features.pill': 'Teknologi',
         'features.title': 'Fitur Unggulan',
         'features.subtitle': 'Teknologi canggih untuk verifikasi dokumen yang akurat',
+        'features.card1.title': '🤖 Klasifikasi Otomatis',
+        'features.card1.desc': 'Upload PDF, gambar, atau chat export. Sistem kami otomatis mengenali tipe dokumen (contract, invoice, shipping docs, dll).',
+        'features.card2.title': '📝 Ekstraksi Key Terms',
+        'features.card2.desc': 'AI ekstrak data penting: nama pihak, jumlah, tanggal, syarat pembayaran, dan klausul kritis lainnya.',
+        'features.card3.title': '✅ Checklist Engine',
+        'features.card3.desc': 'Deterministic validation: setiap item diberi status PASS, WARN, atau FAIL berdasarkan rules yang jelas.',
+        'features.card4.title': '📄 Laporan PDF',
+        'features.card4.desc': 'Download verification report lengkap dengan missing document list dan inconsistency log.',
+        'features.card5.title': '🔐 Keamanan Data',
+        'features.card5.desc': 'Local-first RAG - data Anda tidak bocor ke cloud pihak ketiga. Audit log append-only untuk compliance.',
+        'features.card6.title': '⚖️ ODR Lite',
+        'features.card6.desc': 'Ruang negosiasi untuk settlement. Eskalasi ke mediasi dan neutral appointment jika diperlukan.',
+
 
         // Tech Section
         'tech.title': 'Teknologi Modern, Dibuat untuk Indonesia',
@@ -98,7 +133,7 @@ const translations = {
         // === TRADE PAGE (trade.html) ===
 
         // Hero
-        'trade.hero.pill': 'Jalur 1: Trade & Perdagangan',
+        'trade.hero.pill': 'Jalur 1',
         'trade.hero.title': 'Verifikasi Dokumen Ekspor-Impor Sebelum Pengiriman',
         'trade.hero.subtitle': 'Cegah penolakan di bea cukai, pembayaran tertunda, dan masalah shipping dengan verifikasi dokumen ekspor yang komprehensif. TertibDocs memastikan kontrak, invoice, dan shipping docs Anda lengkap dan konsisten.',
         'trade.hero.cta.primary': 'Mulai Verifikasi Export',
@@ -118,6 +153,12 @@ const translations = {
         'trade.checklist.pill': 'Comprehensive Checklist',
         'trade.checklist.title': 'Dokumen Ekspor yang Kami Verifikasi',
         'trade.checklist.subtitle': 'Checklist lengkap untuk ekspor yang aman dan tertib',
+
+        // Incoterms
+        'trade.incoterms.pill': 'Incoterms Compliance',
+        'trade.incoterms.title': 'Verifikasi Kecocokan dengan Incoterms',
+        'trade.incoterms.desc': 'Kami pastikan dokumen Anda sesuai dengan Incoterms yang disepakati',
+        'trade.incoterms.check': 'Yang kami cek:',
 
         // How It Works
         'trade.how.pill': 'Proses Verifikasi',
@@ -159,7 +200,7 @@ const translations = {
         // === PROJECT PAGE (project.html) ===
 
         // Project Page
-        'project.hero.pill': 'Jalur 3: Project & Konstruksi',
+        'project.hero.pill': 'Jalur 3',
         'project.hero.title': 'Verifikasi Dokumen Kontrak Konstruksi & Klaim',
         'project.hero.subtitle': 'Cegah penolakan klaim EOT, variasi order yang tidak sah, dan konflik pembayaran dengan verifikasi dokumen konstruksi yang komprehensif. TertibDocs memastikan kontrak, variation order, dan claims Anda lengkap dan terdokumentasi dengan benar.',
         'project.hero.cta.primary': 'Mulai Verifikasi Proyek',
@@ -243,7 +284,79 @@ const translations = {
         'problem.card3.title': 'Invalid Claims',
         'problem.card3.desc': 'Construction claims rejected due to undocumented variation orders or notices.',
 
-        // ... (Solution, Niches, Features keys are fine)
+        // Solution Section
+        'solution.title': 'TertibDocs Solution',
+        'solution.subtitle': 'Prevent problems before it\'s too late with automated verification',
+        'solution.item1.title': 'Document Completeness Verification',
+        'solution.item1.desc': 'Our system checks if all required documents are present and properly formatted.',
+        'solution.item2.title': 'Automated Consistency Check',
+        'solution.item2.desc': 'Cross-reference data across documents to detect mismatches in names, amounts, dates.',
+        'solution.item3.title': 'Gap Analysis & Recommendations',
+        'solution.item3.desc': 'Get actionable recommendations to strengthen your documentation before disputes arise.',
+        'solution.item4.title': 'Structured Negotiation',
+        'solution.item4.desc': 'If issues arise, resolve them with built-in negotiation rooms, or escalate to mediation if needed.',
+
+        // Niches Section
+        'niches.pill': 'Track 2',
+        'niches.title': 'Choose Your Document Category',
+        'niches.subtitle': 'Each track has customized checklists and reports',
+        'niches.learn': 'Learn More',
+        'niches.trade.title': 'Trade / Commerce',
+        'niches.trade.desc': 'For export-import business, sales contracts, and shipping documents',
+        'niches.trade.item1': '✓ Sales contract present',
+        'niches.trade.item2': '✓ Incoterms complete & versioned',
+        'niches.trade.item3': '✓ Invoice matches contract',
+        'niches.trade.item4': '✓ Shipping documents complete',
+        'niches.trade.item5': '✓ Payment terms aligned',
+        'niches.personal.title': 'Personal / Family',
+        'niches.personal.desc': 'For family business, personal loans, and informal partnerships',
+        'niches.personal.item1': '✓ Written agreement exists',
+        'niches.personal.item2': '✓ Authority documented',
+        'niches.personal.item3': '✓ Money trail evidence',
+        'niches.personal.item4': '✓ Exit clause present',
+        'niches.project.title': 'Project / Construction',
+        'niches.project.desc': 'For construction contracts, variation orders, and claims',
+        'niches.project.item1': '✓ Main contract complete',
+        'niches.project.item2': '✓ Variation orders documented',
+        'niches.project.item3': '✓ Notices submitted on time',
+        'niches.project.item4': '✓ Payment certificates consistent',
+        'niches.project.item5': '✓ Claims properly substantiated',
+
+        // Features Section
+        'features.pill': 'Technology',
+        'features.title': 'Key Features',
+        'features.subtitle': 'Advanced technology for accurate document verification',
+        'features.card1.title': '🤖 Automatic Classification',
+        'features.card1.desc': 'Upload PDFs, images, or chat exports. Our system automatically recognizes document types (contract, invoice, shipping docs, etc).',
+        'features.card2.title': '📝 Key Terms Extraction',
+        'features.card2.desc': 'AI extracts parties, amounts, dates, terms, Incoterms, and other critical data points.',
+        'features.card3.title': '✅ Smart Checklist Engine',
+        'features.card3.desc': 'Customized checklist engine per niche. Verify completeness, consistency, and compliance.',
+        'features.card4.title': '📊 Gap Analysis Report',
+        'features.card4.desc': 'Get detailed reports with PASS/WARN/FAIL status and recommended actions.',
+        'features.card5.title': '🔐 Data Security',
+        'features.card5.desc': 'Local-first RAG - your data does not leak to third-party clouds. Append-only audit log for compliance.',
+        'features.card6.title': '⚖️ ODR Lite',
+        'features.card6.desc': 'Negotiation room for settlement. Escalation to mediation and neutral appointment if needed.',
+
+        // How It Works
+        'how.pill': 'Process',
+        'how.title': 'How It Works',
+        'how.subtitle': 'Just 4 simple steps for organized documents',
+        'how.step1.title': 'Upload Documents',
+        'how.step1.desc': 'Upload contracts, invoices, emails, and other supporting documents.',
+        'how.step2.title': 'Automated Verification',
+        'how.step2.desc': 'System will classify, extract data, and run checklist according to your track.',
+        'how.step3.title': 'Review Report',
+        'how.step3.desc': 'Review findings, gap analysis, and improvement recommendations.',
+        'how.step4.title': 'Export & Negotiate',
+        'how.step4.desc': 'Download PDF report or start negotiation process if needed.',
+
+        // CTA Section
+        'cta.title': 'Ready to Organize Your Documents?',
+        'cta.subtitle': 'Start free verification and prevent disputes before it\'s too late',
+        'cta.primary': 'Start Free Verification',
+        'cta.secondary': 'Contact Sales',
 
         // Tech Section
         'tech.title': 'Modern Technology, Built for Indonesia',
@@ -253,8 +366,6 @@ const translations = {
         'tech.feature1.desc': 'UI and reports support both Indonesian and English.',
         'tech.feature2.title': 'Data Privacy',
         'tech.feature2.desc': 'Local-first RAG, no external data leakage. Audit log for compliance.',
-
-        // ... (How It Works, CTA keys are fine)
 
         // Footer
         'footer.disclaimer': 'TertibDocs does not provide legal advice. This platform is for document verification and dispute prevention only.',
@@ -266,7 +377,7 @@ const translations = {
         // === TRADE PAGE (trade.html) ===
 
         // Trade Page
-        'trade.hero.pill': 'Track 1: Trade & Commerce',
+        'trade.hero.pill': 'Track 1',
         'trade.hero.title': 'Verify Export-Import Documents Before Shipment',
         'trade.hero.subtitle': 'Prevent customs rejection, payment delays, and shipping issues with comprehensive export document verification. TertibDocs ensures your contracts, invoices, and shipping docs are complete and consistent.',
         'trade.hero.cta.primary': 'Start Export Verification',
@@ -318,10 +429,13 @@ const translations = {
         'trade.check.compliance.item2.desc': 'For agricultural products, food, or animals.',
 
         // Trade - Incoterms
+        'trade.incoterms.pill': 'Incoterms Compliance',
         'trade.incoterms.title': 'Incoterms Compliance Verification',
         'trade.incoterms.desc': 'We ensure your documents match the agreed Incoterms',
+        'trade.incoterms.check': 'What we check:',
 
         // Trade - Issues
+        'trade.issues.pill': 'Problem Prevention',
         'trade.issues.title': '5 Most Common Export Issues',
         'trade.issues.subtitle': 'And how TertibDocs prevents them',
         'trade.issue1.title': 'L/C Discrepancies',
@@ -335,6 +449,7 @@ const translations = {
         'trade.issue3.sol': 'Verify consistency of weight/volume/CBM across packing list, invoice, and B/L.',
 
         // Trade - How It Works
+        'trade.how.pill': 'Verification Process',
         'trade.how.title': 'How TertibDocs Works for Exports',
         'trade.how.subtitle': '4 easy steps for secure export documentation',
         'trade.how.step1.title': 'Upload Export Documents',
@@ -369,7 +484,7 @@ const translations = {
         // === PROJECT PAGE (project.html) ===
 
         // Project Page
-        'project.hero.pill': 'Track 3: Project & Construction',
+        'project.hero.pill': 'Track 3',
         'project.hero.title': 'Verify Construction Contracts & Claims Documents',
         'project.hero.subtitle': 'Prevent EOT claim rejections, unauthorized variation orders, and payment disputes with comprehensive construction document verification. TertibDocs ensures your contracts, VOs, and claims are complete and properly documented.',
         'project.hero.cta.primary': 'Start Project Verification',
@@ -437,6 +552,7 @@ const translations = {
         'project.check.support.item3.desc': 'QC reports, material tests, third-party inspections.',
 
         // Project - Issues
+        'project.issues.pill': 'Problem Prevention',
         'project.issues.title': '7 Most Common Construction Issues',
         'project.issues.subtitle': 'And how TertibDocs prevents them',
 
@@ -469,6 +585,7 @@ const translations = {
         'project.issue7.sol': 'Track retention % per certificate. Alert release date.',
 
         // Project - How It Works
+        'project.how.pill': 'Verification Process',
         'project.how.title': 'How TertibDocs Works for Construction',
         'project.how.subtitle': '4 easy steps for organized construction documents',
         'project.how.step1.title': 'Upload Project Documents',
@@ -481,6 +598,7 @@ const translations = {
         'project.how.step4.desc': 'Report PASS/WARN/FAIL. Action items to strengthen claims or fix gaps.',
 
         // Project - Sample Output
+        'project.sample.pill': 'Sample Output',
         'project.sample.title': 'Sample Construction Verification Report',
         'project.sample.report_title': 'Verification Report - Mall Construction Project',
         'project.sample.pass1': 'Main Contract Agreement signed and dated, all parties identified',
