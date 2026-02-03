@@ -122,7 +122,7 @@ const translations = {
         'cta.subtitle': 'Mulai verifikasi gratis dan cegah sengketa sebelum terlambat',
         'cta.primary': 'Mulai Verifikasi Gratis',
         'cta.secondary': 'Hubungi Sales',
-        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs',
+        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs',
 
         // Footer
         'footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa.',
@@ -196,7 +196,7 @@ const translations = {
         'trade.cta.subtitle': 'Upload dokumen sekarang dan dapatkan laporan verifikasi dalam hitungan menit',
         'trade.cta.primary': 'Mulai Verifikasi Export',
         'trade.cta.secondary': 'Hubungi Sales untuk Demo',
-        'trade.cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs%20Ekspor',
+        'trade.cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs%20Ekspor',
         'trade.footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum atau customs brokerage. Platform ini hanya untuk verifikasi dokumen dan pencegahan masalah ekspor.',
 
         // === PROJECT PAGE (project.html) ===
@@ -248,7 +248,7 @@ const translations = {
         'project.cta.subtitle': 'Upload dokumen proyek sekarang dan pastikan claims dan payments Anda solid',
         'project.cta.primary': 'Mulai Verifikasi Proyek',
         'project.cta.secondary': 'Hubungi Sales untuk Demo',
-        'project.cta.whatsapp_link': 'https://wa.me/628122067494?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs%20Konstruksi',
+        'project.cta.whatsapp_link': 'https://wa.me/628122067494?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs%20Konstruksi',
     },
 
     en: {
@@ -360,7 +360,7 @@ const translations = {
         'cta.subtitle': 'Start free verification and prevent disputes before it\'s too late',
         'cta.primary': 'Start Free Verification',
         'cta.secondary': 'Contact Sales',
-        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%TertibDocs',
+        'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs',
 
         // Tech Section
         'tech.title': 'Modern Technology, Built for Indonesia',
