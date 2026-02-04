@@ -17,10 +17,10 @@ const translations = {
 
         // Hero Section
         'hero.pill': 'Verifikasi dokumen, bukan drama',
-        'hero.title': 'Rapikan dokumen sebelum sengketa membesar.',
-        'hero.subtitle': 'TertibDocs membantu tim legal, finance, dan operasional menjaga kontrak tetap tertib, lengkap, dan siap audit dalam hitungan menit.',
-        'hero.cta.primary': 'Mulai verifikasi',
-        'hero.cta.secondary': 'Lihat cara kerja',
+        'hero.title': 'Sengketa bisnis jarang kalah di pengadilan.\nBiasanya kalah di dokumen.',
+        'hero.subtitle': 'Tertib membantu memastikan dokumen, kewajiban, dan bukti Anda rapi sebelum transaksi gagal atau sengketa membesar.',
+        'hero.cta.primary': 'Periksa Kesiapan Dokumen',
+        'hero.cta.secondary': 'Lihat Cara Kerja',
         'hero.stat1.title': '3 menit',
         'hero.stat1.desc': 'Ringkas risiko utama',
         'hero.stat2.title': '3 kategori',
@@ -38,6 +38,13 @@ const translations = {
         'problem.card2.desc': 'Klien menolak bayar karena invoice tidak cocok dengan perjanjian atau bukti pengiriman hilang.',
         'problem.card3.title': 'Klaim Tidak Valid',
         'problem.card3.desc': 'Claim proyek konstruksi ditolak karena variasi order atau notice tidak terdokumentasi dengan benar.',
+
+        // Cost of Inaction (New Section)
+        'inaction.title': 'Jika Dokumen Tidak Rapi',
+        'inaction.item1': 'Pengiriman tertahan karena dokumen tidak cocok',
+        'inaction.item2': 'Pembayaran tertunda karena syarat tidak jelas',
+        'inaction.item3': 'Klaim ditolak karena bukti tidak lengkap',
+        'inaction.disclaimer': 'Contoh di atas bersifat umum dan tidak menjamin hasil tertentu.',
 
         // Solution Section
         'solution.title': 'Solusi TertibDocs',
@@ -57,6 +64,7 @@ const translations = {
         'niches.subtitle': 'Setiap jalur punya checklist dan laporan yang disesuaikan',
         'niches.learn': 'Pelajari Lebih Lanjut',
         'niches.trade.title': 'Trade / Perdagangan',
+        'niches.trade.outcome': 'Untuk mencegah penolakan pengiriman dan pembayaran macet.',
         'niches.trade.desc': 'Untuk bisnis ekspor-impor, sales contract, dan shipping documents',
         'niches.trade.item1': '✓ Kontrak jual-beli ada',
         'niches.trade.item2': '✓ Incoterms lengkap & versioned',
@@ -64,6 +72,7 @@ const translations = {
         'niches.trade.item4': '✓ Dokumen pengiriman lengkap',
         'niches.trade.item5': '✓ Syarat pembayaran selaras',
         'niches.project.title': 'Project / Konstruksi',
+        'niches.project.outcome': 'Untuk kesiapan klaim dan kepatuhan administrasi proyek.',
         'niches.project.desc': 'Untuk kontrak konstruksi, variation orders, dan claims',
         'niches.project.item1': '✓ Kontrak utama lengkap',
         'niches.project.item2': '✓ Variation order terdokumentasi',
@@ -71,6 +80,7 @@ const translations = {
         'niches.project.item4': '✓ Sertifikat pembayaran konsisten',
         'niches.project.item5': '✓ Klaim tersubstansiasi dengan baik',
         'niches.personal.title': 'Personal / Keluarga',
+        'niches.personal.outcome': 'Untuk kejelasan kesepakatan dan alur uang pribadi.',
         'niches.personal.desc': 'Untuk family business, pinjaman personal, dan partnership informal',
         'niches.personal.item1': '✓ Perjanjian tertulis ada',
         'niches.personal.item2': '✓ Wewenang terdokumentasi',
@@ -109,13 +119,17 @@ const translations = {
         'how.title': 'Cara Kerja',
         'how.subtitle': 'Hanya 4 langkah sederhana untuk dokumen yang tertib',
         'how.step1.title': 'Upload Dokumen',
+        'how.speed.step1': 'Unggah dokumen',
         'how.step1.desc': 'Upload kontrak, invoice, email, dan dokumen pendukung lainnya.',
         'how.step2.title': 'Verifikasi Otomatis',
+        'how.speed.step2': 'Sistem memeriksa konsistensi',
         'how.step2.desc': 'Sistem akan klasifikasi, ekstrak data, dan jalankan checklist sesuai jalur Anda.',
         'how.step3.title': 'Review Laporan',
         'how.step3.desc': 'Tinjau temuan, gap analysis, dan rekomendasi perbaikan.',
         'how.step4.title': 'Export & Negosiasi',
         'how.step4.desc': 'Download laporan PDF atau mulai proses negosiasi jika diperlukan.',
+        'how.speed.step3': 'Laporan siap digunakan',
+        'how.speed.sub': 'Tanpa konsultasi hukum. Tanpa proses panjang.',
 
         // CTA Section
         'cta.title': 'Siap Merapikan Dokumen Anda?',
@@ -125,6 +139,8 @@ const translations = {
         'cta.whatsapp_link': 'https://wa.me/6281388889818?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20TertibDocs',
 
         // Footer
+        // Footer / Trust
+        'trust.disclaimer': 'Tertib adalah platform teknologi. Bukan kantor hukum atau lembaga arbitrase.',
         'footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa.',
         'footer.copyright': '2026 TertibDocs. All rights reserved. Made with ❤️ for Indonesian businesses.',
         'footer.contact': 'Kontak',
@@ -265,10 +281,10 @@ const translations = {
 
         // Hero Section
         'hero.pill': 'Document verification, not drama',
-        'hero.title': 'Organize documents before disputes escalate.',
-        'hero.subtitle': 'TertibDocs helps legal, finance, and operations teams keep contracts organized, complete, and audit-ready in minutes.',
-        'hero.cta.primary': 'Start verification',
-        'hero.cta.secondary': 'See how it works',
+        'hero.title': 'Most business disputes aren\'t lost in court.\nThey\'re lost in the paperwork.',
+        'hero.subtitle': 'Tertib helps ensure your documents, obligations, and evidence are in order before transactions fail or disputes escalate.',
+        'hero.cta.primary': 'Check Document Readiness',
+        'hero.cta.secondary': 'See How It Works',
         'hero.stat1.title': '3 minutes',
         'hero.stat1.desc': 'Summarize key risks',
         'hero.stat2.title': '3 categories',
@@ -286,6 +302,13 @@ const translations = {
         'problem.card2.desc': 'Client refuses payment due to invoice mismatch or missing delivery proof.',
         'problem.card3.title': 'Invalid Claims',
         'problem.card3.desc': 'Construction claims rejected due to undocumented variation orders or notices.',
+
+        // Cost of Inaction (New Section)
+        'inaction.title': 'When Documents Are Not in Order',
+        'inaction.item1': 'Shipments delayed due to document mismatch',
+        'inaction.item2': 'Payments stalled due to unclear terms',
+        'inaction.item3': 'Claims rejected due to incomplete evidence',
+        'inaction.disclaimer': 'Examples above are illustrative and do not guarantee outcomes.',
 
         // Solution Section
         'solution.title': 'TertibDocs Solution',
@@ -305,6 +328,7 @@ const translations = {
         'niches.subtitle': 'Each track has customized checklists and reports',
         'niches.learn': 'Learn More',
         'niches.trade.title': 'Trade / Commerce',
+        'niches.trade.outcome': 'To reduce shipment rejection and payment delays.',
         'niches.trade.desc': 'For export-import business, sales contracts, and shipping documents',
         'niches.trade.item1': '✓ Sales contract present',
         'niches.trade.item2': '✓ Incoterms complete & versioned',
@@ -312,12 +336,14 @@ const translations = {
         'niches.trade.item4': '✓ Shipping documents complete',
         'niches.trade.item5': '✓ Payment terms aligned',
         'niches.personal.title': 'Personal / Family',
+        'niches.personal.outcome': 'For clarity in personal agreements and money flows.',
         'niches.personal.desc': 'For family business, personal loans, and informal partnerships',
         'niches.personal.item1': '✓ Written agreement exists',
         'niches.personal.item2': '✓ Authority documented',
         'niches.personal.item3': '✓ Money trail evidence',
         'niches.personal.item4': '✓ Exit clause present',
         'niches.project.title': 'Project / Construction',
+        'niches.project.outcome': 'For claim readiness and project administrative compliance.',
         'niches.project.desc': 'For construction contracts, variation orders, and claims',
         'niches.project.item1': '✓ Main contract complete',
         'niches.project.item2': '✓ Variation orders documented',
@@ -361,6 +387,14 @@ const translations = {
         'cta.primary': 'Start Free Verification',
         'cta.secondary': 'Contact Sales',
         'cta.whatsapp_link': 'https://wa.me/966504183224?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20TertibDocs',
+
+        // Use Case Outcomes (already added above, effectively part of Niches)
+
+        // Speed & Effort
+        'how.speed.step1': 'Upload documents',
+        'how.speed.step2': 'System checks consistency',
+        'how.speed.step3': 'Reports ready to use',
+        'how.speed.sub': 'No legal consultation. No lengthy process.',
         // Tech Section
         'tech.title': 'Modern Technology, Built for Indonesia',
         'tech.subtitle': 'State-of-the-art backend and frontend',
@@ -371,6 +405,8 @@ const translations = {
         'tech.feature2.desc': 'Local-first RAG, no external data leakage. Audit log for compliance.',
 
         // Footer
+        // Footer / Trust
+        'trust.disclaimer': 'Tertib is a technology platform. Not a law firm or arbitral institution.',
         'footer.disclaimer': 'TertibDocs does not provide legal advice. This platform is for document verification and dispute prevention only.',
         'footer.copyright': '2026 TertibDocs. All rights reserved. Made with ❤️ for businesses worldwide.',
         'footer.contact': 'Contact',
