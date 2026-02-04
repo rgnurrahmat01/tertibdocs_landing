@@ -18,7 +18,7 @@ const translations = {
         // Hero Section
         'hero.pill': 'Verifikasi dokumen, bukan drama',
         'hero.title': 'Sengketa bisnis jarang kalah di pengadilan.\nBiasanya kalah di dokumen.',
-        'hero.subtitle': 'Tertib membantu memastikan dokumen, kewajiban, dan bukti Anda rapi sebelum transaksi gagal atau sengketa membesar.',
+        'hero.subtitle': 'TertibDocs membantu memastikan dokumen, kewajiban, dan bukti Anda rapi sebelum transaksi gagal atau sengketa membesar.',
         'hero.cta.primary': 'Periksa Kesiapan Dokumen',
         'hero.cta.secondary': 'Lihat Cara Kerja',
         'hero.stat1.title': '3 menit',
@@ -140,7 +140,7 @@ const translations = {
 
         // Footer
         // Footer / Trust
-        'trust.disclaimer': 'Tertib adalah platform teknologi. Bukan kantor hukum atau lembaga arbitrase.',
+        'trust.disclaimer': 'TertibDocs adalah platform teknologi. Bukan kantor hukum atau lembaga arbitrase.',
         'footer.disclaimer': 'TertibDocs tidak memberikan nasihat hukum. Platform ini hanya untuk verifikasi dokumen dan pencegahan sengketa.',
         'footer.copyright': '2026 TertibDocs. All rights reserved. Made with ❤️ for Indonesian businesses.',
         'footer.contact': 'Kontak',
@@ -282,7 +282,7 @@ const translations = {
         // Hero Section
         'hero.pill': 'Document verification, not drama',
         'hero.title': 'Most business disputes aren\'t lost in court.\nThey\'re lost in the paperwork.',
-        'hero.subtitle': 'Tertib helps ensure your documents, obligations, and evidence are in order before transactions fail or disputes escalate.',
+        'hero.subtitle': 'TertibDocs helps ensure your documents, obligations, and evidence are in order before transactions fail or disputes escalate.',
         'hero.cta.primary': 'Check Document Readiness',
         'hero.cta.secondary': 'See How It Works',
         'hero.stat1.title': '3 minutes',
@@ -406,7 +406,7 @@ const translations = {
 
         // Footer
         // Footer / Trust
-        'trust.disclaimer': 'Tertib is a technology platform. Not a law firm or arbitral institution.',
+        'trust.disclaimer': 'TertibDocs is a technology platform. Not a law firm or arbitral institution.',
         'footer.disclaimer': 'TertibDocs does not provide legal advice. This platform is for document verification and dispute prevention only.',
         'footer.copyright': '2026 TertibDocs. All rights reserved. Made with ❤️ for businesses worldwide.',
         'footer.contact': 'Contact',
